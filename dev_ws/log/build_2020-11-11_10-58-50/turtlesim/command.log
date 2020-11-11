@@ -1,0 +1,4 @@
+Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/build/turtlesim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/turtlesim -- -j4 -l4
+Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/turtlesim -- -j4 -l4
+Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/build/turtlesim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/turtlesim --target install -- -j4 -l4
+Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/turtlesim --target install -- -j4 -l4

@@ -1,0 +1,37 @@
+[0.273s] Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/src/my_package': PYTHONPATH=/home/caesar/Desktop/ROS2/install/my_package/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/my_package build --build-base /home/caesar/Desktop/ROS2/build/my_package/build install --prefix /home/caesar/Desktop/ROS2/install/my_package --record /home/caesar/Desktop/ROS2/build/my_package/install.log --single-version-externally-managed
+[0.507s] running egg_info
+[0.508s] creating ../../../build/my_package/my_package.egg-info
+[0.508s] writing ../../../build/my_package/my_package.egg-info/PKG-INFO
+[0.509s] writing dependency_links to ../../../build/my_package/my_package.egg-info/dependency_links.txt
+[0.509s] writing entry points to ../../../build/my_package/my_package.egg-info/entry_points.txt
+[0.509s] writing requirements to ../../../build/my_package/my_package.egg-info/requires.txt
+[0.509s] writing top-level names to ../../../build/my_package/my_package.egg-info/top_level.txt
+[0.509s] writing manifest file '../../../build/my_package/my_package.egg-info/SOURCES.txt'
+[0.548s] reading manifest file '../../../build/my_package/my_package.egg-info/SOURCES.txt'
+[0.549s] writing manifest file '../../../build/my_package/my_package.egg-info/SOURCES.txt'
+[0.549s] running build
+[0.549s] running build_py
+[0.550s] creating /home/caesar/Desktop/ROS2/build/my_package/build
+[0.550s] creating /home/caesar/Desktop/ROS2/build/my_package/build/lib
+[0.551s] creating /home/caesar/Desktop/ROS2/build/my_package/build/lib/my_package
+[0.551s] copying my_package/my_node.py -> /home/caesar/Desktop/ROS2/build/my_package/build/lib/my_package
+[0.551s] copying my_package/__init__.py -> /home/caesar/Desktop/ROS2/build/my_package/build/lib/my_package
+[0.551s] running install
+[0.551s] running install_lib
+[0.551s] creating /home/caesar/Desktop/ROS2/install/my_package/lib/python3.6/site-packages/my_package
+[0.551s] copying /home/caesar/Desktop/ROS2/build/my_package/build/lib/my_package/my_node.py -> /home/caesar/Desktop/ROS2/install/my_package/lib/python3.6/site-packages/my_package
+[0.551s] copying /home/caesar/Desktop/ROS2/build/my_package/build/lib/my_package/__init__.py -> /home/caesar/Desktop/ROS2/install/my_package/lib/python3.6/site-packages/my_package
+[0.551s] byte-compiling /home/caesar/Desktop/ROS2/install/my_package/lib/python3.6/site-packages/my_package/my_node.py to my_node.cpython-36.pyc
+[0.552s] byte-compiling /home/caesar/Desktop/ROS2/install/my_package/lib/python3.6/site-packages/my_package/__init__.py to __init__.cpython-36.pyc
+[0.552s] running install_data
+[0.552s] creating /home/caesar/Desktop/ROS2/install/my_package/share/ament_index
+[0.552s] creating /home/caesar/Desktop/ROS2/install/my_package/share/ament_index/resource_index
+[0.552s] creating /home/caesar/Desktop/ROS2/install/my_package/share/ament_index/resource_index/packages
+[0.553s] copying resource/my_package -> /home/caesar/Desktop/ROS2/install/my_package/share/ament_index/resource_index/packages
+[0.553s] copying package.xml -> /home/caesar/Desktop/ROS2/install/my_package/share/my_package
+[0.553s] running install_egg_info
+[0.554s] Copying ../../../build/my_package/my_package.egg-info to /home/caesar/Desktop/ROS2/install/my_package/lib/python3.6/site-packages/my_package-0.0.0-py3.6.egg-info
+[0.555s] running install_scripts
+[0.576s] Installing my_node script to /home/caesar/Desktop/ROS2/install/my_package/lib/my_package
+[0.576s] writing list of installed files to '/home/caesar/Desktop/ROS2/build/my_package/install.log'
+[0.601s] Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/src/my_package' returned '0': PYTHONPATH=/home/caesar/Desktop/ROS2/install/my_package/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/my_package build --build-base /home/caesar/Desktop/ROS2/build/my_package/build install --prefix /home/caesar/Desktop/ROS2/install/my_package --record /home/caesar/Desktop/ROS2/build/my_package/install.log --single-version-externally-managed
