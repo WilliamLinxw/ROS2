@@ -1,0 +1,172 @@
+-- Found ament_cmake_ros: 0.7.0 (/opt/ros/dashing/share/ament_cmake_ros/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 0.7.14 (/opt/ros/dashing/share/rclcpp/cmake)
+-- Found rosidl_adapter: 0.7.9 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found ros2_serial_msgs: 0.0.0 (/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/cmake)
+-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)
+-- Found rclcpp_components: 0.7.14 (/opt/ros/dashing/share/rclcpp_components/cmake)
+-- Found poco_vendor:  (/opt/ros/dashing/share/poco_vendor/cmake)
+-- Found sensor_msgs: 0.7.0 (/opt/ros/dashing/share/sensor_msgs/cmake)
+-- Found ament_cmake_gtest: 0.7.5 (/opt/ros/dashing/share/ament_cmake_gtest/cmake)
+-- Found gtest sources under '/opt/ros/dashing/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_example
+[35m[1mScanning dependencies of target ros2_to_serial_bridge_node[0m
+[35m[1mScanning dependencies of target ring_buffer[0m
+[35m[1mScanning dependencies of target gtest_main[0m
+[  1%] [34m[1mGenerating topics[0m
+[  2%] [32mBuilding CXX object CMakeFiles/ring_buffer.dir/src/ring_buffer.cpp.o[0m
+[  3%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[  4%] [32m[1mLinking CXX shared library libring_buffer.so[0m
+[  4%] Built target ring_buffer
+[  5%] [32mBuilding CXX object CMakeFiles/ros2_to_serial_bridge_node.dir/rclcpp_components/node_main_ros2_to_serial_bridge_node.cpp.o[0m
+[35m[1mScanning dependencies of target gtest[0m
+[  7%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[  8%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[  8%] Built target gtest_main
+[35m[1mScanning dependencies of target transporter[0m
+[  9%] [32mBuilding CXX object CMakeFiles/transporter.dir/src/transporter.cpp.o[0m
+[35m[1mScanning dependencies of target bridge_gen[0m
+[ 10%] [32m[1mLinking CXX shared library libtransporter.so[0m
+[ 10%] Built target transporter
+[35m[1mScanning dependencies of target dummy_udp[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/dummy_udp.dir/src/dummy_udp.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_multi_dof_joint_state_pub_sub_type.cpp.o[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/dummy_udp.dir/src/udp_transporter.cpp.o[0m
+[ 15%] [32m[1mLinking CXX executable ros2_to_serial_bridge_node[0m
+[ 16%] [32m[1mLinking CXX executable dummy_udp[0m
+[ 16%] Built target ros2_to_serial_bridge_node
+[35m[1mScanning dependencies of target dummy_serial[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/dummy_serial.dir/src/dummy_serial.cpp.o[0m
+[ 17%] Built target dummy_udp
+[ 18%] [32mBuilding CXX object CMakeFiles/dummy_serial.dir/src/uart_transporter.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_relative_humidity_pub_sub_type.cpp.o[0m
+[ 21%] [32m[1mLinking CXX executable dummy_serial[0m
+[ 21%] Built target dummy_serial
+[ 22%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_fluid_pressure_pub_sub_type.cpp.o[0m
+[ 23%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 23%] Built target gtest
+[35m[1mScanning dependencies of target test_ring_buffer[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/test_ring_buffer.dir/test/test_ring_buffer.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_channel_float32_pub_sub_type.cpp.o[0m
+[ 27%] [32m[1mLinking CXX executable test_ring_buffer[0m
+[ 27%] Built target test_ring_buffer
+[35m[1mScanning dependencies of target test_transporter[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/test_transporter.dir/test/test_transporter.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_camera_info_pub_sub_type.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_compressed_image_pub_sub_type.cpp.o[0m
+[ 31%] [32m[1mLinking CXX executable test_transporter[0m
+[ 31%] Built target test_transporter
+[ 32%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_joy_feedback_pub_sub_type.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_joy_feedback_array_pub_sub_type.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_region_of_interest_pub_sub_type.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_imu_pub_sub_type.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_range_pub_sub_type.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_image_pub_sub_type.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_joy_pub_sub_type.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_battery_state_pub_sub_type.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_point_field_pub_sub_type.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_temperature_pub_sub_type.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_nav_sat_fix_pub_sub_type.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_point_cloud2_pub_sub_type.cpp.o[0m
+[ 47%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_nav_sat_status_pub_sub_type.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_laser_echo_pub_sub_type.cpp.o[0m
+[ 49%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_point_cloud_pub_sub_type.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_joint_state_pub_sub_type.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_illuminance_pub_sub_type.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_laser_scan_pub_sub_type.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_magnetic_field_pub_sub_type.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_time_reference_pub_sub_type.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/sensor_msgs_multi_echo_laser_scan_pub_sub_type.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_char_pub_sub_type.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_bool_pub_sub_type.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_u_int64_pub_sub_type.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_int64_multi_array_pub_sub_type.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_int8_multi_array_pub_sub_type.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_multi_array_layout_pub_sub_type.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_u_int8_multi_array_pub_sub_type.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_float32_pub_sub_type.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_int16_pub_sub_type.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_float64_multi_array_pub_sub_type.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_float32_multi_array_pub_sub_type.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_int64_pub_sub_type.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_int32_pub_sub_type.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_u_int32_multi_array_pub_sub_type.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_u_int8_pub_sub_type.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_u_int32_pub_sub_type.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_byte_pub_sub_type.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_int16_multi_array_pub_sub_type.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_int8_pub_sub_type.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_string_pub_sub_type.cpp.o[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_float64_pub_sub_type.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_int32_multi_array_pub_sub_type.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_multi_array_dimension_pub_sub_type.cpp.o[0m
+[ 84%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_color_rgba_pub_sub_type.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_header_pub_sub_type.cpp.o[0m
+[ 87%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_byte_multi_array_pub_sub_type.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_u_int16_multi_array_pub_sub_type.cpp.o[0m
+[ 89%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_u_int16_pub_sub_type.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_empty_pub_sub_type.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/bridge_gen.dir/std_msgs_u_int64_multi_array_pub_sub_type.cpp.o[0m
+[ 92%] [32m[1mLinking CXX shared library libbridge_gen.so[0m
+[ 92%] Built target bridge_gen
+[35m[1mScanning dependencies of target test_ros2_topics[0m
+[35m[1mScanning dependencies of target ros2_to_serial_bridge[0m
+[ 94%] [32mBuilding CXX object CMakeFiles/test_ros2_topics.dir/test/test_ros2_topics.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/ros2_to_serial_bridge.dir/src/uart_transporter.cpp.o[0m
+[ 96%] [32mBuilding CXX object CMakeFiles/ros2_to_serial_bridge.dir/src/ros2_to_serial_bridge.cpp.o[0m
+[ 97%] [32mBuilding CXX object CMakeFiles/ros2_to_serial_bridge.dir/src/udp_transporter.cpp.o[0m
+[ 98%] [32m[1mLinking CXX executable test_ros2_topics[0m
+[100%] [32m[1mLinking CXX shared library libros2_to_serial_bridge.so[0m
+[100%] Built target test_ros2_topics
+[100%] Built target ros2_to_serial_bridge
+[  2%] Built target ring_buffer
+[  4%] Built target gtest_main
+[  7%] Built target ros2_to_serial_bridge_node
+[  9%] Built target gtest
+[ 11%] Built target transporter
+[ 17%] Built target test_ring_buffer
+[ 17%] Built target dummy_serial
+[ 21%] Built target dummy_udp
+[ 23%] Built target test_transporter
+[ 92%] Built target bridge_gen
+[ 95%] Built target test_ros2_topics
+[100%] Built target ros2_to_serial_bridge
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/ros2_serial_example/ros2_to_serial_bridge_node
+-- Set runtime path of "/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/ros2_serial_example/ros2_to_serial_bridge_node" to ""
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/libring_buffer.so
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/libtransporter.so
+-- Set runtime path of "/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/libtransporter.so" to ""
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/libbridge_gen.so
+-- Set runtime path of "/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/libbridge_gen.so" to ""
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/ros2_serial_example/dummy_serial
+-- Set runtime path of "/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/ros2_serial_example/dummy_serial" to ""
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/ros2_serial_example/dummy_udp
+-- Set runtime path of "/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/ros2_serial_example/dummy_udp" to ""
+-- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/ros2_serial_example/ros2_to_serial_bridge_node
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/libros2_to_serial_bridge.so
+-- Set runtime path of "/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/libros2_to_serial_bridge.so" to ""
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/launch
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/launch/px4.launch.py
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/config
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/config/default_ros2_to_serial_bridge_params.yaml
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/config/px4_serial_to_ros2_bridge_params.yaml
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ament_index/resource_index/package_run_dependencies/ros2_serial_example
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ament_index/resource_index/parent_prefix_path/ros2_serial_example
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/environment/ament_prefix_path.sh
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/environment/path.sh
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/local_setup.bash
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/local_setup.sh
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/local_setup.zsh
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ament_index/resource_index/packages/ros2_serial_example
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ament_index/resource_index/rclcpp_components/ros2_serial_example
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/cmake/ros2_serial_exampleConfig.cmake
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/cmake/ros2_serial_exampleConfig-version.cmake
+-- Installing: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/package.xml

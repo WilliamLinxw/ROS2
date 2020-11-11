@@ -1,0 +1,33 @@
+[0.013s] Invoking command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_example': AMENT_PREFIX_PATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs:/opt/ros/dashing LD_LIBRARY_PATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake /home/caesar/Desktop/ROS2/ROS2_serial/src/ros2_serial_example/ros2_serial_example -DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example
+[0.024s] -- Found ament_cmake_ros: 0.7.0 (/opt/ros/dashing/share/ament_cmake_ros/cmake)
+[0.053s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.239s] -- Found rclcpp: 0.7.14 (/opt/ros/dashing/share/rclcpp/cmake)
+[0.252s] -- Found rosidl_adapter: 0.7.9 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[0.285s] -- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+[0.286s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.311s] -- Found ros2_serial_msgs: 0.0.0 (/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/cmake)
+[0.314s] -- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)
+[0.321s] -- Found rclcpp_components: 0.7.14 (/opt/ros/dashing/share/rclcpp_components/cmake)
+[0.323s] -- Found poco_vendor:  (/opt/ros/dashing/share/poco_vendor/cmake)
+[0.336s] -- Found sensor_msgs: 0.7.0 (/opt/ros/dashing/share/sensor_msgs/cmake)
+[0.360s] CMake Error at CMakeLists.txt:25 (find_package):
+[0.360s]   By not providing "Findpx4_msgs.cmake" in CMAKE_MODULE_PATH this project has
+[0.360s]   asked CMake to find a package configuration file provided by "px4_msgs",
+[0.361s]   but CMake did not find one.
+[0.361s] 
+[0.361s]   Could not find a package configuration file provided by "px4_msgs" with any
+[0.361s]   of the following names:
+[0.361s] 
+[0.361s]     px4_msgsConfig.cmake
+[0.361s]     px4_msgs-config.cmake
+[0.361s] 
+[0.361s]   Add the installation prefix of "px4_msgs" to CMAKE_PREFIX_PATH or set
+[0.361s]   "px4_msgs_DIR" to a directory containing one of the above files.  If
+[0.362s]   "px4_msgs" provides a separate development package or SDK, be sure it has
+[0.362s]   been installed.
+[0.362s] 
+[0.362s] 
+[0.362s] -- Configuring incomplete, errors occurred!
+[0.362s] See also "/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_example/CMakeFiles/CMakeOutput.log".
+[0.362s] See also "/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_example/CMakeFiles/CMakeError.log".
+[0.365s] Invoked command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_example' returned '1': AMENT_PREFIX_PATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs:/opt/ros/dashing LD_LIBRARY_PATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake /home/caesar/Desktop/ROS2/ROS2_serial/src/ros2_serial_example/ros2_serial_example -DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example

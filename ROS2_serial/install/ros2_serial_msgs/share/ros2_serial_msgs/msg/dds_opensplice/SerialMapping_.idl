@@ -1,0 +1,42 @@
+// generated from rosidl_generator_dds_idl/resource/idl.idl.em
+// with input from ros2_serial_msgs:msg/SerialMapping.idl
+// generated code does not contain a copyright notice
+
+#ifndef __ros2_serial_msgs__msg__serial_mapping__idl__
+#define __ros2_serial_msgs__msg__serial_mapping__idl__
+
+
+module ros2_serial_msgs {
+
+module msg {
+
+module dds_ {
+
+module SerialMapping_Constants {
+const octet SERIALTOROS2_ = 0;
+const octet ROS2TOSERIAL_ = 1;
+
+};
+
+struct SerialMapping_ {
+sequence<string> topic_names_;
+
+sequence<unsigned long long> serial_mappings_;
+
+sequence<string> types_;
+
+sequence<octet> direction_;
+
+
+};
+
+#pragma keylist SerialMapping_
+
+};  // module dds_
+
+};  // module msg
+
+};  // module ros2_serial_msgs
+
+
+#endif  // __ros2_serial_msgs__msg__serial_mapping__idl__

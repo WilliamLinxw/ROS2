@@ -1,0 +1,127 @@
+[0.022s] Invoking command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs -- -j4 -l4
+[0.091s] [  2%] Built target ros2_serial_msgs__dds_opensplice_idl
+[0.093s] [  6%] Built target ros2_serial_msgs__cpp
+[0.093s] [ 10%] Built target ros2_serial_msgs__rosidl_generator_c
+[0.127s] [ 16%] Built target ros2_serial_msgs__rosidl_typesupport_c
+[0.133s] [ 22%] Built target ros2_serial_msgs__rosidl_typesupport_fastrtps_cpp
+[0.139s] [ 28%] Built target ros2_serial_msgs__rosidl_typesupport_introspection_c
+[0.142s] [ 34%] Built target ros2_serial_msgs__rosidl_typesupport_introspection_cpp
+[0.171s] [ 40%] Built target ros2_serial_msgs__rosidl_typesupport_cpp
+[0.176s] [ 57%] Built target ros2_serial_msgs__rosidl_typesupport_opensplice_cpp
+[0.182s] [ 63%] Built target ros2_serial_msgs__rosidl_typesupport_fastrtps_c
+[0.217s] [ 81%] Built target ros2_serial_msgs__rosidl_typesupport_opensplice_c
+[0.242s] [ 81%] Built target ros2_serial_msgs
+[0.267s] [ 83%] Built target ros2_serial_msgs__py
+[0.297s] [ 87%] Built target ros2_serial_msgs__python
+[0.329s] [ 95%] Built target ros2_serial_msgs__rosidl_typesupport_opensplice_c__pyext
+[0.329s] [ 95%] Built target ros2_serial_msgs__rosidl_typesupport_c__pyext
+[0.330s] [100%] Built target ros2_serial_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.343s] Invoked command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs -- -j4 -l4
+[0.419s] Invoking command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs --target install -- -j4 -l4
+[0.479s] [  8%] Built target ros2_serial_msgs__dds_opensplice_idl
+[0.479s] [ 10%] Built target ros2_serial_msgs__cpp
+[0.480s] [ 10%] Built target ros2_serial_msgs__rosidl_generator_c
+[0.506s] [ 22%] Built target ros2_serial_msgs__rosidl_typesupport_introspection_c
+[0.506s] [ 22%] Built target ros2_serial_msgs__rosidl_typesupport_introspection_cpp
+[0.509s] [ 28%] Built target ros2_serial_msgs__rosidl_typesupport_c
+[0.510s] [ 34%] Built target ros2_serial_msgs__rosidl_typesupport_fastrtps_cpp
+[0.534s] [ 40%] Built target ros2_serial_msgs__rosidl_typesupport_cpp
+[0.541s] [ 46%] Built target ros2_serial_msgs__rosidl_typesupport_fastrtps_c
+[0.548s] [ 63%] Built target ros2_serial_msgs__rosidl_typesupport_opensplice_cpp
+[0.586s] [ 81%] Built target ros2_serial_msgs__rosidl_typesupport_opensplice_c
+[0.609s] [ 81%] Built target ros2_serial_msgs
+[0.633s] [ 83%] Built target ros2_serial_msgs__py
+[0.662s] [ 87%] Built target ros2_serial_msgs__python
+[0.693s] [100%] Built target ros2_serial_msgs__rosidl_typesupport_opensplice_c__pyext
+[0.693s] [100%] Built target ros2_serial_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.693s] [100%] Built target ros2_serial_msgs__rosidl_typesupport_c__pyext
+[0.719s] [36mInstall the project...[0m
+[0.730s] -- Install configuration: ""
+[0.730s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ament_index/resource_index/rosidl_interfaces/ros2_serial_msgs
+[0.730s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/libros2_serial_msgs__rosidl_typesupport_c.so
+[0.731s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/environment/library_path.sh
+[0.731s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/libros2_serial_msgs__rosidl_typesupport_cpp.so
+[0.731s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs
+[0.731s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg
+[0.731s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping__rosidl_typesupport_fastrtps_c.h
+[0.731s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.732s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/libros2_serial_msgs__rosidl_typesupport_fastrtps_c.so
+[0.732s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs
+[0.732s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg
+[0.732s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping.h
+[0.732s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping__type_support.h
+[0.732s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping__functions.h
+[0.732s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping__struct.h
+[0.732s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.733s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping__functions.c
+[0.733s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/libros2_serial_msgs__rosidl_generator_c.so
+[0.733s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs
+[0.733s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg
+[0.733s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/dds_fastrtps
+[0.733s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.733s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping__rosidl_typesupport_fastrtps_cpp.hpp
+[0.733s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/libros2_serial_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.733s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs
+[0.733s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg
+[0.733s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping__struct.hpp
+[0.734s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping.hpp
+[0.734s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping__traits.hpp
+[0.734s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs
+[0.734s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg
+[0.734s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.734s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping__type_support.c
+[0.734s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping__rosidl_typesupport_introspection_c.h
+[0.734s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/libros2_serial_msgs__rosidl_typesupport_introspection_c.so
+[0.734s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs
+[0.734s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg
+[0.734s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/rosidl_typesupport_opensplice_c__visibility_control.h
+[0.735s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/dds_opensplice_c
+[0.735s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping__rosidl_typesupport_opensplice_c.h
+[0.735s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/libros2_serial_msgs__rosidl_typesupport_opensplice_c.so
+[0.735s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/msg/dds_opensplice
+[0.735s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/msg/dds_opensplice/SerialMapping_.idl
+[0.735s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs
+[0.735s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg
+[0.736s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/dds_opensplice
+[0.736s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/dds_opensplice/ccpp_SerialMapping_.h
+[0.737s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/dds_opensplice/SerialMapping_SplDcps.h
+[0.737s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/dds_opensplice/SerialMapping_Dcps_impl.h
+[0.738s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/dds_opensplice/SerialMapping_.h
+[0.738s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/dds_opensplice/SerialMapping_Dcps.h
+[0.738s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/rosidl_typesupport_opensplice_cpp__visibility_control.h
+[0.739s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping__rosidl_typesupport_opensplice_cpp.hpp
+[0.739s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/libros2_serial_msgs__rosidl_typesupport_opensplice_cpp.so
+[0.739s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs
+[0.739s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg
+[0.739s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping__rosidl_typesupport_introspection_cpp.hpp
+[0.739s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/include/ros2_serial_msgs/msg/serial_mapping__type_support.cpp
+[0.739s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/libros2_serial_msgs__rosidl_typesupport_introspection_cpp.so
+[0.739s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/environment/pythonpath.sh
+[0.739s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/python3.6/site-packages/ros2_serial_msgs/__init__.py
+[0.775s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/python3.6/site-packages/ros2_serial_msgs/msg
+[0.775s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/python3.6/site-packages/ros2_serial_msgs/msg/_serial_mapping.py
+[0.775s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/python3.6/site-packages/ros2_serial_msgs/msg/__init__.py
+[0.775s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/python3.6/site-packages/ros2_serial_msgs/msg/_serial_mapping_s.c
+[0.775s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/python3.6/site-packages/ros2_serial_msgs/ros2_serial_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so
+[0.776s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/python3.6/site-packages/ros2_serial_msgs/ros2_serial_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so
+[0.777s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/python3.6/site-packages/ros2_serial_msgs/ros2_serial_msgs_s__rosidl_typesupport_opensplice_c.cpython-36m-x86_64-linux-gnu.so
+[0.778s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/libros2_serial_msgs__python.so
+[0.778s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/msg/SerialMapping.idl
+[0.778s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/msg/SerialMapping.msg
+[0.779s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ament_index/resource_index/package_run_dependencies/ros2_serial_msgs
+[0.779s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ament_index/resource_index/parent_prefix_path/ros2_serial_msgs
+[0.779s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/environment/ament_prefix_path.sh
+[0.779s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/environment/path.sh
+[0.779s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/local_setup.bash
+[0.779s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/local_setup.sh
+[0.780s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/local_setup.zsh
+[0.780s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ament_index/resource_index/packages/ros2_serial_msgs
+[0.780s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/cmake/rosidl_cmake-extras.cmake
+[0.780s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.780s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.780s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.780s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.780s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/cmake/ros2_serial_msgsConfig.cmake
+[0.780s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/cmake/ros2_serial_msgsConfig-version.cmake
+[0.780s] -- Up-to-date: /home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/package.xml
+[0.785s] Invoked command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs --target install -- -j4 -l4

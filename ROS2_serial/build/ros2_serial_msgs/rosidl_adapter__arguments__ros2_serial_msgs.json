@@ -1,0 +1,6 @@
+{
+  "package_name": "ros2_serial_msgs",
+  "non_idl_tuples": [
+    "/home/caesar/Desktop/ROS2/ROS2_serial/src/ros2_serial_example/ros2_serial_msgs:msg/SerialMapping.msg"
+  ]
+}

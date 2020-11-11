@@ -1,0 +1,24 @@
+{
+  "package_name": "ros2_serial_msgs",
+  "output_dir": "/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs/rosidl_generator_py/ros2_serial_msgs",
+  "template_dir": "/opt/ros/dashing/share/rosidl_generator_py/cmake/../resource",
+  "idl_tuples": [
+    "/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs/rosidl_adapter/ros2_serial_msgs:msg/SerialMapping.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/dashing/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
+    "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_generator_py/__init__.py",
+    "/opt/ros/dashing/lib/python3.6/site-packages/rosidl_generator_py/generate_py_impl.py",
+    "/opt/ros/dashing/share/rosidl_generator_py/cmake/../resource/_action_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/dashing/share/rosidl_generator_py/cmake/../resource/_action.py.em",
+    "/opt/ros/dashing/share/rosidl_generator_py/cmake/../resource/_idl_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/dashing/share/rosidl_generator_py/cmake/../resource/_idl_support.c.em",
+    "/opt/ros/dashing/share/rosidl_generator_py/cmake/../resource/_idl.py.em",
+    "/opt/ros/dashing/share/rosidl_generator_py/cmake/../resource/_msg_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/dashing/share/rosidl_generator_py/cmake/../resource/_msg_support.c.em",
+    "/opt/ros/dashing/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
+    "/opt/ros/dashing/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
+    "/opt/ros/dashing/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
+    "/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs/rosidl_adapter/ros2_serial_msgs/msg/SerialMapping.idl"
+  ]
+}

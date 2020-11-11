@@ -1,0 +1,274 @@
+[0.187s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--cmake-args', '-DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs']
+[0.187s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=['-DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs'], cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd9381ecef0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd9381ecef0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fd9381fa278>)
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.193s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/caesar/Desktop/ROS2/ROS2_serial'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.207s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example) by extension 'ros'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example) by extensions ['cmake', 'python']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example) by extension 'cmake'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example) by extension 'python'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example) by extensions ['python_setup_py']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example) by extension 'python_setup_py'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/microcontroller) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/microcontroller) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/microcontroller) ignored
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_example) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_example) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_example) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_example) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_example) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_example) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_example) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_example) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_example) by extension 'ros'
+[0.214s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_serial_example/ros2_serial_example' with type 'ros.ament_cmake' and name 'ros2_serial_example'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_msgs) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_msgs) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_msgs) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_msgs) by extension 'colcon_pkg'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_msgs) by extensions ['colcon_meta']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_msgs) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_msgs) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_serial_example/ros2_serial_msgs) by extension 'ros'
+[0.215s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_serial_example/ros2_serial_msgs' with type 'ros.ament_cmake' and name 'ros2_serial_msgs'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial-ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial-ros2) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial-ros2) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial-ros2) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial-ros2) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial-ros2) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial-ros2) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial-ros2) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial-ros2) by extension 'ros'
+[0.217s] DEBUG:colcon.colcon_core.package_identification:Package 'src/serial-ros2' with type 'ros.ament_cmake' and name 'serial'
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.217s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_msgs' build argument 'cmake_args' from command line to '['-DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs']'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_msgs' build argument 'cmake_target' from command line to 'None'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.239s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.239s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_serial_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs', 'merge_install': False, 'path': '/home/caesar/Desktop/ROS2/ROS2_serial/src/ros2_serial_example/ros2_serial_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to '['-DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs']'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.243s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.243s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/caesar/Desktop/ROS2/ROS2_serial/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial', 'merge_install': False, 'path': '/home/caesar/Desktop/ROS2/ROS2_serial/src/serial-ros2', 'symlink_install': False, 'test_result_base': None}
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_example' build argument 'cmake_args' from command line to '['-DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs']'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_example' build argument 'cmake_target' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_example' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_example' build argument 'cmake_clean_cache' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_example' build argument 'cmake_clean_first' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_example' build argument 'cmake_force_configure' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_example' build argument 'ament_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_example' build argument 'catkin_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'ros2_serial_example' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.246s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_serial_example' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_example', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example', 'merge_install': False, 'path': '/home/caesar/Desktop/ROS2/ROS2_serial/src/ros2_serial_example/ros2_serial_example', 'symlink_install': False, 'test_result_base': None}
+[0.247s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.249s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.249s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/caesar/Desktop/ROS2/ROS2_serial/src/ros2_serial_example/ros2_serial_msgs' with build type 'ament_cmake'
+[0.249s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/caesar/Desktop/ROS2/ROS2_serial/src/ros2_serial_example/ros2_serial_msgs'
+[0.253s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.254s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.254s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.256s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.259s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/caesar/Desktop/ROS2/ROS2_serial/src/serial-ros2' with build type 'ament_cmake'
+[0.259s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/caesar/Desktop/ROS2/ROS2_serial/src/serial-ros2'
+[0.260s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.260s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.263s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[0.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/caesar/Desktop/ROS2/ROS2_serial/src/ros2_serial_example/ros2_serial_msgs -DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs
+[0.280s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/serial': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/caesar/Desktop/ROS2/ROS2_serial/src/serial-ros2 -DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/ROS2_serial/install/serial
+[0.612s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/caesar/Desktop/ROS2/ROS2_serial/src/serial-ros2 -DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/ROS2_serial/install/serial
+[0.613s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/serial': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/ROS2_serial/build/serial -- -j4 -l4
+[0.687s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/ROS2_serial/build/serial -- -j4 -l4
+[0.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/serial': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/ROS2_serial/build/serial --target install -- -j4 -l4
+[0.830s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[0.832s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/ROS2_serial/build/serial --target install -- -j4 -l4
+[0.835s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial' for CMake module files
+[0.836s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial' for CMake config files
+[0.836s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[0.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[0.837s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[0.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/lib'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/bin'
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/lib/pkgconfig/serial.pc'
+[0.840s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/lib/python3.6/site-packages'
+[0.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/package.ps1'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/package.dsv'
+[0.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/package.sh'
+[0.857s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/package.bash'
+[0.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/package.zsh'
+[0.859s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/colcon-core/packages/serial)
+[0.890s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial' for CMake module files
+[0.892s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial' for CMake config files
+[0.892s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[0.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[0.893s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[0.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[0.895s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/lib'
+[0.895s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/bin'
+[0.895s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/lib/pkgconfig/serial.pc'
+[0.895s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/lib/python3.6/site-packages'
+[0.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/package.ps1'
+[0.897s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/package.dsv'
+[0.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/package.sh'
+[0.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/package.bash'
+[0.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/serial/package.zsh'
+[0.899s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/caesar/Desktop/ROS2/ROS2_serial/install/serial/share/colcon-core/packages/serial)
+[1.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/caesar/Desktop/ROS2/ROS2_serial/src/ros2_serial_example/ros2_serial_msgs -DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs
+[1.201s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs -- -j4 -l4
+[1.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs -- -j4 -l4
+[1.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs --target install -- -j4 -l4
+[1.881s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_serial_msgs)
+[1.883s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs' for CMake module files
+[1.884s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_msgs --target install -- -j4 -l4
+[1.884s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs' for CMake config files
+[1.885s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_serial_msgs', 'cmake_prefix_path')
+[1.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/cmake_prefix_path.ps1'
+[1.886s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/cmake_prefix_path.dsv'
+[1.886s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/cmake_prefix_path.sh'
+[1.887s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib'
+[1.887s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_serial_msgs', 'ld_library_path_lib')
+[1.888s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/ld_library_path_lib.ps1'
+[1.888s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/ld_library_path_lib.dsv'
+[1.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/ld_library_path_lib.sh'
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/bin'
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/pkgconfig/ros2_serial_msgs.pc'
+[1.889s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/python3.6/site-packages'
+[1.889s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_serial_msgs', 'pythonpath')
+[1.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/pythonpath.ps1'
+[1.890s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/pythonpath.dsv'
+[1.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/pythonpath.sh'
+[1.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/package.ps1'
+[1.892s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/package.dsv'
+[1.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/package.sh'
+[1.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/package.bash'
+[1.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/package.zsh'
+[1.894s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/colcon-core/packages/ros2_serial_msgs)
+[1.963s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_serial_msgs)
+[1.964s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs' for CMake module files
+[1.964s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs' for CMake config files
+[1.965s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_serial_msgs', 'cmake_prefix_path')
+[1.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/cmake_prefix_path.ps1'
+[1.966s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/cmake_prefix_path.dsv'
+[1.967s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/cmake_prefix_path.sh'
+[1.967s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib'
+[1.968s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_serial_msgs', 'ld_library_path_lib')
+[1.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/ld_library_path_lib.ps1'
+[1.968s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/ld_library_path_lib.dsv'
+[1.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/ld_library_path_lib.sh'
+[1.969s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/bin'
+[1.969s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/pkgconfig/ros2_serial_msgs.pc'
+[1.969s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/python3.6/site-packages'
+[1.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_serial_msgs', 'pythonpath')
+[1.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/pythonpath.ps1'
+[1.970s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/pythonpath.dsv'
+[1.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/hook/pythonpath.sh'
+[1.972s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/package.ps1'
+[1.972s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/package.dsv'
+[1.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/package.sh'
+[1.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/package.bash'
+[1.974s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/ros2_serial_msgs/package.zsh'
+[1.974s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/share/colcon-core/packages/ros2_serial_msgs)
+[1.975s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/caesar/Desktop/ROS2/ROS2_serial/src/ros2_serial_example/ros2_serial_example' with build type 'ament_cmake'
+[1.975s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/caesar/Desktop/ROS2/ROS2_serial/src/ros2_serial_example/ros2_serial_example'
+[1.976s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.976s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.978s] DEBUG:colcon.colcon_core.shell:Ignoring prefix path '/opt/ros/dashing'
+[1.990s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_example': AMENT_PREFIX_PATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs:/opt/ros/dashing LD_LIBRARY_PATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake /home/caesar/Desktop/ROS2/ROS2_serial/src/ros2_serial_example/ros2_serial_example -DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example
+[2.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_example' returned '1': AMENT_PREFIX_PATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs:/opt/ros/dashing LD_LIBRARY_PATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake /home/caesar/Desktop/ROS2/ROS2_serial/src/ros2_serial_example/ros2_serial_example -DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example
+[2.375s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_serial_example)
+[2.377s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example' for CMake module files
+[2.377s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example' for CMake config files
+[2.378s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/bin'
+[2.378s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/pkgconfig/ros2_serial_example.pc'
+[2.378s] Level 1:colcon.colcon_core.environment:checking '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/lib/python3.6/site-packages'
+[2.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/package.ps1'
+[2.379s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/package.dsv'
+[2.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/package.sh'
+[2.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/package.bash'
+[2.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/ros2_serial_example/package.zsh'
+[2.381s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/caesar/Desktop/ROS2/ROS2_serial/install/ros2_serial_example/share/colcon-core/packages/ros2_serial_example)
+[2.391s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.393s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.393s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[2.393s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.399s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.400s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.400s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.403s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.403s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/caesar/Desktop/ROS2/ROS2_serial/install/local_setup.ps1'
+[2.405s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/caesar/Desktop/ROS2/ROS2_serial/install/_local_setup_util_ps1.py'
+[2.406s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/caesar/Desktop/ROS2/ROS2_serial/install/setup.ps1'
+[2.409s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/caesar/Desktop/ROS2/ROS2_serial/install/local_setup.sh'
+[2.410s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/caesar/Desktop/ROS2/ROS2_serial/install/_local_setup_util_sh.py'
+[2.410s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/caesar/Desktop/ROS2/ROS2_serial/install/setup.sh'
+[2.413s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/caesar/Desktop/ROS2/ROS2_serial/install/local_setup.bash'
+[2.413s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/caesar/Desktop/ROS2/ROS2_serial/install/setup.bash'
+[2.416s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/caesar/Desktop/ROS2/ROS2_serial/install/local_setup.zsh'
+[2.416s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/caesar/Desktop/ROS2/ROS2_serial/install/setup.zsh'
