@@ -24,7 +24,7 @@ def main(args=None):
 
     rclpy.spin(minimal_subscriber)
 
-    print('shutdown!!!')
+    
 
     # Destroy the node explicitly
     # (optional - otherwise it will be done automatically

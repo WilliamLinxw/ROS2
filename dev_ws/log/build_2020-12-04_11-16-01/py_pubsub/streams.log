@@ -1,0 +1,25 @@
+[0.574s] Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/src/py_pubsub': PYTHONPATH=/home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/build install --prefix /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub --record /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/install.log --single-version-externally-managed
+[0.839s] running egg_info
+[0.840s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[0.840s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[0.840s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[0.841s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[0.841s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[0.886s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.886s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[0.886s] running build
+[0.886s] running build_py
+[0.887s] copying py_pubsub/subscriber_member_function.py -> /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/build/lib/py_pubsub
+[0.887s] running install
+[0.887s] running install_lib
+[0.887s] copying /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub
+[0.887s] byte-compiling /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-36.pyc
+[0.887s] running install_data
+[0.887s] running install_egg_info
+[0.887s] removing '/home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub-0.0.0-py3.6.egg-info' (and everything under it)
+[0.887s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub-0.0.0-py3.6.egg-info
+[0.887s] running install_scripts
+[0.906s] Installing listener script to /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/py_pubsub
+[0.906s] Installing talker script to /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/py_pubsub
+[0.906s] writing list of installed files to '/home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/install.log'
+[0.940s] Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/src/py_pubsub' returned '0': PYTHONPATH=/home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/build install --prefix /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub --record /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/install.log --single-version-externally-managed
