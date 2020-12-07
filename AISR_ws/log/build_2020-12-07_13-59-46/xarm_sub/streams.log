@@ -1,0 +1,21 @@
+[0.258s] Invoking command in '/home/caesar/Desktop/ROS2/AISR_ws/src/xarm_sub': PYTHONPATH=/home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/xarm_sub build --build-base /home/caesar/Desktop/ROS2/AISR_ws/build/xarm_sub/build install --prefix /home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub --record /home/caesar/Desktop/ROS2/AISR_ws/build/xarm_sub/install.log --single-version-externally-managed
+[0.479s] running egg_info
+[0.479s] writing ../../build/xarm_sub/xarm_sub.egg-info/PKG-INFO
+[0.480s] writing dependency_links to ../../build/xarm_sub/xarm_sub.egg-info/dependency_links.txt
+[0.480s] writing entry points to ../../build/xarm_sub/xarm_sub.egg-info/entry_points.txt
+[0.480s] writing requirements to ../../build/xarm_sub/xarm_sub.egg-info/requires.txt
+[0.480s] writing top-level names to ../../build/xarm_sub/xarm_sub.egg-info/top_level.txt
+[0.513s] reading manifest file '../../build/xarm_sub/xarm_sub.egg-info/SOURCES.txt'
+[0.514s] writing manifest file '../../build/xarm_sub/xarm_sub.egg-info/SOURCES.txt'
+[0.514s] running build
+[0.514s] running build_py
+[0.515s] running install
+[0.515s] running install_lib
+[0.516s] running install_data
+[0.517s] running install_egg_info
+[0.518s] removing '/home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub/lib/python3.6/site-packages/xarm_sub-0.0.0-py3.6.egg-info' (and everything under it)
+[0.519s] Copying ../../build/xarm_sub/xarm_sub.egg-info to /home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub/lib/python3.6/site-packages/xarm_sub-0.0.0-py3.6.egg-info
+[0.520s] running install_scripts
+[0.539s] Installing xarm_listener script to /home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub/lib/xarm_sub
+[0.539s] writing list of installed files to '/home/caesar/Desktop/ROS2/AISR_ws/build/xarm_sub/install.log'
+[0.561s] Invoked command in '/home/caesar/Desktop/ROS2/AISR_ws/src/xarm_sub' returned '0': PYTHONPATH=/home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/xarm_sub build --build-base /home/caesar/Desktop/ROS2/AISR_ws/build/xarm_sub/build install --prefix /home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub --record /home/caesar/Desktop/ROS2/AISR_ws/build/xarm_sub/install.log --single-version-externally-managed

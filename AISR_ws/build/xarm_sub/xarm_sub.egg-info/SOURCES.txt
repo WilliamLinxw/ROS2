@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/xarm_sub/xarm_sub.egg-info/PKG-INFO
+../../build/xarm_sub/xarm_sub.egg-info/SOURCES.txt
+../../build/xarm_sub/xarm_sub.egg-info/dependency_links.txt
+../../build/xarm_sub/xarm_sub.egg-info/entry_points.txt
+../../build/xarm_sub/xarm_sub.egg-info/requires.txt
+../../build/xarm_sub/xarm_sub.egg-info/top_level.txt
+../../build/xarm_sub/xarm_sub.egg-info/zip-safe
+resource/xarm_sub
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+xarm_sub/__init__.py
+xarm_sub/xarm_sub.py

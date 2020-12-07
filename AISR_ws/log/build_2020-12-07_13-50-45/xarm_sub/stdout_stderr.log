@@ -1,0 +1,29 @@
+running egg_info
+creating ../../build/xarm_sub/xarm_sub.egg-info
+writing ../../build/xarm_sub/xarm_sub.egg-info/PKG-INFO
+writing dependency_links to ../../build/xarm_sub/xarm_sub.egg-info/dependency_links.txt
+writing entry points to ../../build/xarm_sub/xarm_sub.egg-info/entry_points.txt
+writing requirements to ../../build/xarm_sub/xarm_sub.egg-info/requires.txt
+writing top-level names to ../../build/xarm_sub/xarm_sub.egg-info/top_level.txt
+writing manifest file '../../build/xarm_sub/xarm_sub.egg-info/SOURCES.txt'
+reading manifest file '../../build/xarm_sub/xarm_sub.egg-info/SOURCES.txt'
+writing manifest file '../../build/xarm_sub/xarm_sub.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/caesar/Desktop/ROS2/AISR_ws/build/xarm_sub/build
+creating /home/caesar/Desktop/ROS2/AISR_ws/build/xarm_sub/build/lib
+creating /home/caesar/Desktop/ROS2/AISR_ws/build/xarm_sub/build/lib/xarm_sub
+copying xarm_sub/__init__.py -> /home/caesar/Desktop/ROS2/AISR_ws/build/xarm_sub/build/lib/xarm_sub
+copying xarm_sub/xarm_sub.py -> /home/caesar/Desktop/ROS2/AISR_ws/build/xarm_sub/build/lib/xarm_sub
+running install
+running install_lib
+creating /home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub/lib/python3.6/site-packages/xarm_sub
+copying /home/caesar/Desktop/ROS2/AISR_ws/build/xarm_sub/build/lib/xarm_sub/__init__.py -> /home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub/lib/python3.6/site-packages/xarm_sub
+copying /home/caesar/Desktop/ROS2/AISR_ws/build/xarm_sub/build/lib/xarm_sub/xarm_sub.py -> /home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub/lib/python3.6/site-packages/xarm_sub
+byte-compiling /home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub/lib/python3.6/site-packages/xarm_sub/__init__.py to __init__.cpython-36.pyc
+byte-compiling /home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub/lib/python3.6/site-packages/xarm_sub/xarm_sub.py to xarm_sub.cpython-36.pyc
+running install_data
+creating /home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub/share/ament_index
+creating /home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub/share/ament_index/resource_index
+creating /home/caesar/Desktop/ROS2/AISR_ws/install/xarm_sub/share/ament_index/resource_index/packages
+error: can't copy 'resource/xarm_sub': doesn't exist or not a regular file
