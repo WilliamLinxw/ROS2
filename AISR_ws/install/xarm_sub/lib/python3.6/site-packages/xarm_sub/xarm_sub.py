@@ -42,8 +42,18 @@ class WhiteArmSubscriber(Node):
 
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
-        angles = list(msg.data)
         
+        angles_speeds_blank_space = list(msg.data)
+        
+        # Get rid of the blank space
+        angles_speeds = angles_speeds_blank_space[::2]
+
+        # Extract angles
+        angles = angles_speeds[::2]
+        
+        # Extract speeds
+        speeds = angles_speeds[1::2]
+
         # Process the angle data
         angles[1] = -angles[1]
         angles[0] += math.degrees(-2.932)
@@ -52,9 +62,12 @@ class WhiteArmSubscriber(Node):
         angles[3] += math.degrees(1.012)
         angles[4] += math.degrees(3.124)
 
-        speed = 30
+        # Select the speed and send the command
+        speed = min(max(speeds), 40)
+        print('speed: ', speed)
         arm.set_servo_angle(angle=angles, speed=speed, is_radian=False, wait=False)
         print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
+
 
 def main(args=None):
     rclpy.init(args=args)
