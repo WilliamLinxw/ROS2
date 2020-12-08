@@ -42,11 +42,9 @@ class WhiteArmSubscriber(Node):
 
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
-        
-        angles_speeds_blank_space = list(msg.data)
-        
-        # Get rid of the blank space
-        angles_speeds = angles_speeds_blank_space[::2]
+
+        # Get list for angles and speeds
+        angles_speeds= list(np.array(msg.data.split(" "), dtype=np.float))
 
         # Extract angles
         angles = angles_speeds[::2]
