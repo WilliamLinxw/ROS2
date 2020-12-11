@@ -10,27 +10,39 @@ import math
 import numpy as np
 import json
 
+import pdb
+
 from xarm.wrapper import XArmAPI
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../..'))
+
+is_test = False
+
+# pdb.set_trace()
 
 #######################################################
 """
 Just for test example
 """
-if len(sys.argv) >= 2:
-    ip = sys.argv[1]
-else:
+if not is_test:
+    """
+    if len(sys.argv) >= 2:
+        ip = sys.argv[1]
+    else:
+    """
     try:
         from configparser import ConfigParser
         parser = ConfigParser()
-        parser.read('./src/xarm_sub/xarm_config/robot.conf')
+        parser.read('../src/xarm_sub/xarm_config/robot.conf')
         ip = parser.get('xArm', 'ip')
     except:
+        """
         ip = input('Please input the xArm ip address:')
         if not ip:
             print('input error, exit')
             sys.exit(1)
+        """
+        ip = "192.168.1.217"
 ########################################################
 
 
@@ -85,7 +97,6 @@ class WhiteArmSubscriber(Node):
         '''
         This function is for moving according to the result data of learning
         '''
-
         angles = [None, None, None, None, None, None, None]
         message_list = list(np.array(message.split(" "), dtype=np.float))
 
@@ -103,7 +114,7 @@ class WhiteArmSubscriber(Node):
         # Process the angle datas for the offsets
         i_servo = 0
         while i_servo <= 6:
-            if angles[i_servo]:
+            if angles[i_servo] or angles[i_servo] == 0:
                 if i_servo == 0:
                     angles[i_servo] += -168
                 elif i_servo == 1:
@@ -119,12 +130,31 @@ class WhiteArmSubscriber(Node):
                 elif i_servo == 6:
                     angles[i_servo] += -26
             i_servo += 1
-
+        
+        current_angle = arm.get_servo_angle()[1]
+        print(current_angle)
+        for i in range(len(angles)):
+            if angles[i] is None:
+                angles[i] = current_angle[i]
+        
         speed = min(max(servo_speed), 40)
         print('speed: ', speed)
-        arm.set_servo_angle(angle=angles, speed=speed, is_radian=False, wait=False)
-        print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
+        print('angles: ', angles)
 
+        if not is_test:
+            arm.set_servo_angle(angle=angles, speed=speed, is_radian=False, wait=False)
+            print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
+    
+    def move_test(self, action_name=None):
+        if action_name is not None:
+            for line in open('../aisr_actions/aisr_actions/%s.txt'%action_name):
+                print(line)
+                self.move_any_servo(line)
+
+        else:
+            for line in open('../aisr_actions/aisr_actions/ResetHead.txt'):
+                print(line)
+                self.move_any_servo(line)
 
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
@@ -161,31 +191,37 @@ class WhiteArmSubscriber(Node):
         # print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
 
 
-def main(args=None):
+def main(args=None, action_name=None):
     rclpy.init(args=args)
 
     white_arm_subscriber = WhiteArmSubscriber()
 
-    rclpy.spin(white_arm_subscriber)
+    white_arm_subscriber.move_test(action_name)
 
-    # Destroy the node explicitly
-    # (optional - otherwise it will be done automatically
-    # when the garbage collector destroys the node object)
-    white_arm_subscriber.destroy_node()
-    rclpy.shutdown()
+    # if is_test:
+    #     white_arm_subscriber.move_test()
+    
+    # else:
+    #     rclpy.spin(white_arm_subscriber)
 
-    # Shut down the xArm
-    print('Motion finished')
-    arm.disconnect()
+    #     # Destroy the node explicitly
+    #     # (optional - otherwise it will be done automatically
+    #     # when the garbage collector destroys the node object)
+    #     white_arm_subscriber.destroy_node()
+    #     rclpy.shutdown()
+
+    #     # Shut down the xArm
+    #     print('Motion finished')
+    #     arm.disconnect()
 
 if __name__ == '__main__':
-    arm = XArmAPI(ip)
-    arm.motion_enable(enable=True)
-    arm.set_mode(0)
-    arm.set_state(state=0)
-
-    main()
-
-    # print('Motion finished')
-
-    # arm.disconnect()
+    if not is_test:
+        arm = XArmAPI(ip)
+        arm.motion_enable(enable=True)
+        arm.set_mode(0)
+        arm.set_state(state=0)
+    print('start')
+    if len(sys.argv) > 1:
+        main(action_name=sys.argv[1])
+    else:
+        main()
