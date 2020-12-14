@@ -18,8 +18,8 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '../../..'))
 
 # Flags for different testing situations
 # If both are false, just print out the text files
-is_test_arm = False
-is_test_ROS = False
+is_arm_ready = False
+is_ROS_ready = False
 
 # pdb.set_trace()
 
@@ -27,7 +27,7 @@ is_test_ROS = False
 """
 Just for test example
 """
-if is_test_arm:
+if is_arm_ready:
     try:
         from configparser import ConfigParser
         parser = ConfigParser()
@@ -91,7 +91,7 @@ class WhiteArmSubscriber(Node):
         servo_move_angle = move_head_dict['angle']
         target_servo_angle = current_servo_angle + servo_move_angle
         print('target angle: ', target_servo_angle)
-        if is_test_arm:
+        if is_arm_ready:
             arm.set_servo_angle(servo_id=servo_id, angle=target_servo_angle, speed=10, wait=False)
             print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
 
@@ -146,12 +146,12 @@ class WhiteArmSubscriber(Node):
         print('speed: ', speed)
         print('angles: ', angles)
 
-        if is_test_arm:
+        if is_arm_ready:
             arm.set_servo_angle(angle=angles, speed=speed, is_radian=False, wait=False)
             print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
 
 
-    # Callback function in ROS
+    # Callback function for ROS subscription
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
 
@@ -192,12 +192,13 @@ class WhiteArmSubscriber(Node):
         if action_name is not None:
             for line in open('../aisr_actions/aisr_actions/%s.txt'%action_name):
                 print(line)
-                if is_test_arm:
+                if is_arm_ready:
                     self.move_any_servo(line)
         else:
-            for line in open('../aisr_actions/aisr_actions/ResetHead.txt'):
+            # If the motion was not decided by input, select one here
+            for line in open('../aisr_actions/ResetHead.txt'):
                 print(line)
-                if is_test_arm:
+                if is_arm_ready:
                     self.move_any_servo(line)
 
 def main(args=None, action_name=None):
@@ -205,9 +206,9 @@ def main(args=None, action_name=None):
 
     white_arm_subscriber = WhiteArmSubscriber()
 
-    # white_arm_subscriber.move_test(action_name)
-
-    if not is_test_ROS:
+    # If ROS is ready, start spinning for the subscription
+    # If ROS is not ready, go to the move test without entering spinning
+    if not is_ROS_ready:
         white_arm_subscriber.move_test(action_name)  
     else:
         rclpy.spin(white_arm_subscriber)
@@ -218,17 +219,19 @@ def main(args=None, action_name=None):
         white_arm_subscriber.destroy_node()
         rclpy.shutdown()
 
-    #     # Shut down the xArm
-    #     print('Motion finished')
-    #     arm.disconnect()
+        # Shut down the xArm
+        arm.disconnect()
+        print('xArm disconnected')
 
 if __name__ == '__main__':
-    if is_test_arm:
+    if is_arm_ready:
         arm = XArmAPI(ip)
         arm.motion_enable(enable=True)
         arm.set_mode(0)
         arm.set_state(state=0)
+
     print('start')
+    
     if len(sys.argv) > 1:
         main(action_name=sys.argv[1])
     else:
