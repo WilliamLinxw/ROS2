@@ -91,6 +91,7 @@ class WhiteArmSubscriber(Node):
         servo_move_angle = move_head_dict['angle']
         target_servo_angle = current_servo_angle + servo_move_angle
         print('target angle: ', target_servo_angle)
+        
         if is_arm_ready:
             arm.set_servo_angle(servo_id=servo_id, angle=target_servo_angle, speed=10, wait=False)
             print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
