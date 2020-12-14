@@ -18,7 +18,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '../../..'))
 
 # Flags for different testing situations
 # If both are false, just print out the text files
-is_arm_ready = False
+is_arm_ready = True
 is_ROS_ready = False
 
 # pdb.set_trace()
@@ -191,13 +191,13 @@ class WhiteArmSubscriber(Node):
     # Test function when ROS is not ready
     def move_test(self, action_name=None):
         if action_name is not None:
-            for line in open('../aisr_actions/aisr_actions/%s.txt'%action_name):
+            for line in open('../aisr_actions_20201214/%s.txt'%action_name):
                 print(line)
                 if is_arm_ready:
                     self.move_any_servo(line)
         else:
             # If the motion was not decided by input, select one here
-            for line in open('../aisr_actions/ResetHead.txt'):
+            for line in open('../aisr_actions_20201214/ResetAll.txt'):
                 print(line)
                 if is_arm_ready:
                     self.move_any_servo(line)
