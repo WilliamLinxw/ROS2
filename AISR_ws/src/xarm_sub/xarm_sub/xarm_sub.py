@@ -16,7 +16,10 @@ from xarm.wrapper import XArmAPI
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../..'))
 
-is_test = False
+# Flags for different testing situations
+# If both are false, just print out the text files
+is_test_arm = False
+is_test_ROS = False
 
 # pdb.set_trace()
 
@@ -24,12 +27,7 @@ is_test = False
 """
 Just for test example
 """
-if not is_test:
-    """
-    if len(sys.argv) >= 2:
-        ip = sys.argv[1]
-    else:
-    """
+if is_test_arm:
     try:
         from configparser import ConfigParser
         parser = ConfigParser()
@@ -42,6 +40,8 @@ if not is_test:
             print('input error, exit')
             sys.exit(1)
         """
+        # The specific IP for the xArm
+        # If a different IP is needed, uncommand lines above
         ip = "192.168.1.217"
 ########################################################
 
@@ -53,6 +53,8 @@ class WhiteArmSubscriber(Node):
         self.subscription = self.create_subscription(String, 'white_arm', self.listener_callback, 10)
         self.subscription  # prevent unused variable warning
 
+
+    # Move only one servo based on the message input
     def move_one_servo_only(self, message):
 
         '''
@@ -88,10 +90,13 @@ class WhiteArmSubscriber(Node):
 
         servo_move_angle = move_head_dict['angle']
         target_servo_angle = current_servo_angle + servo_move_angle
-        arm.set_servo_angle(servo_id=servo_id, angle=target_servo_angle, speed=10, wait=False)
-        print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
+        print('target angle: ', target_servo_angle)
+        if is_test_arm:
+            arm.set_servo_angle(servo_id=servo_id, angle=target_servo_angle, speed=10, wait=False)
+            print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
 
 
+    # Move any servo based on the message input
     def move_any_servo(self, message):
 
         '''
@@ -141,21 +146,12 @@ class WhiteArmSubscriber(Node):
         print('speed: ', speed)
         print('angles: ', angles)
 
-        if not is_test:
+        if is_test_arm:
             arm.set_servo_angle(angle=angles, speed=speed, is_radian=False, wait=False)
             print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
-    
-    def move_test(self, action_name=None):
-        if action_name is not None:
-            for line in open('../aisr_actions/aisr_actions/%s.txt'%action_name):
-                print(line)
-                self.move_any_servo(line)
 
-        else:
-            for line in open('../aisr_actions/aisr_actions/ResetHead.txt'):
-                print(line)
-                self.move_any_servo(line)
 
+    # Callback function in ROS
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
 
@@ -191,31 +187,43 @@ class WhiteArmSubscriber(Node):
         # print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
 
 
+    # Test function when ROS is not ready
+    def move_test(self, action_name=None):
+        if action_name is not None:
+            for line in open('../aisr_actions/aisr_actions/%s.txt'%action_name):
+                print(line)
+                if is_test_arm:
+                    self.move_any_servo(line)
+        else:
+            for line in open('../aisr_actions/aisr_actions/ResetHead.txt'):
+                print(line)
+                if is_test_arm:
+                    self.move_any_servo(line)
+
 def main(args=None, action_name=None):
     rclpy.init(args=args)
 
     white_arm_subscriber = WhiteArmSubscriber()
 
-    white_arm_subscriber.move_test(action_name)
+    # white_arm_subscriber.move_test(action_name)
 
-    # if is_test:
-    #     white_arm_subscriber.move_test()
-    
-    # else:
-    #     rclpy.spin(white_arm_subscriber)
+    if not is_test_ROS:
+        white_arm_subscriber.move_test(action_name)  
+    else:
+        rclpy.spin(white_arm_subscriber)
 
-    #     # Destroy the node explicitly
-    #     # (optional - otherwise it will be done automatically
-    #     # when the garbage collector destroys the node object)
-    #     white_arm_subscriber.destroy_node()
-    #     rclpy.shutdown()
+        # Destroy the node explicitly
+        # (optional - otherwise it will be done automatically
+        # when the garbage collector destroys the node object)
+        white_arm_subscriber.destroy_node()
+        rclpy.shutdown()
 
     #     # Shut down the xArm
     #     print('Motion finished')
     #     arm.disconnect()
 
 if __name__ == '__main__':
-    if not is_test:
+    if is_test_arm:
         arm = XArmAPI(ip)
         arm.motion_enable(enable=True)
         arm.set_mode(0)
