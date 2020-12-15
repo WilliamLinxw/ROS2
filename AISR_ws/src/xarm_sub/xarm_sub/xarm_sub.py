@@ -18,8 +18,8 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '../../..'))
 
 # Flags for different testing situations
 # If both are false, just print out the text files
-is_arm_ready = True
-is_ROS_ready = False
+is_arm_ready = False
+is_ROS_ready = True
 
 # pdb.set_trace()
 
@@ -62,6 +62,8 @@ class WhiteArmSubscriber(Node):
         '''
 
         move_head_dict = json.loads(message)
+        print('Message: ', move_head_dict)
+        
         servo_id_ROS = move_head_dict['id']
         
         # ID offset
@@ -80,20 +82,24 @@ class WhiteArmSubscriber(Node):
         elif servo_id_ROS == 9:
             servo_id = 4
 
-        current_servo_angle_xArm = arm.get_servo_angle(servo_id=servo_id)
-
-        # Angle offset
-        if servo_id == 6:
-            current_servo_angle = current_servo_angle_xArm + 54.5
-        elif servo_id == 7:
-            current_servo_angle = current_servo_angle_xArm - 26
-
-        servo_move_angle = move_head_dict['angle']
-        target_servo_angle = current_servo_angle + servo_move_angle
-        print('target angle: ', target_servo_angle)
-        
+        # Get the current angle
+        # Only work when the xArm is connected
         if is_arm_ready:
-            arm.set_servo_angle(servo_id=servo_id, angle=target_servo_angle, speed=10, wait=False)
+            current_servo_angle_xArm = arm.get_servo_angle(servo_id=servo_id)
+
+            # Angle offset
+            if servo_id == 6:
+                current_servo_angle = current_servo_angle_xArm + 54.5
+            elif servo_id == 7:
+                current_servo_angle = current_servo_angle_xArm - 26
+
+            servo_move_angle = move_head_dict['angle']
+            target_servo_angle = current_servo_angle + servo_move_angle
+
+            print('Servo ID: ', servo_id)
+            print('target angle: ', target_servo_angle)
+        
+            arm.set_servo_angle(servo_id=servo_id, angle=target_servo_angle, is_radian=False, speed=10, wait=False)
             print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
 
 
@@ -136,12 +142,15 @@ class WhiteArmSubscriber(Node):
                 elif i_servo == 6:
                     angles[i_servo] += -26
             i_servo += 1
-        
-        current_angle = arm.get_servo_angle()[1]
-        print(current_angle)
-        for i in range(len(angles)):
-            if angles[i] is None:
-                angles[i] = current_angle[i]
+
+        # Get the current angle for servos that do not move
+        # Only work when the arm is connected
+        if is_arm_ready:
+            current_angle = arm.get_servo_angle()[1]
+            print(current_angle)
+            for i in range(len(angles)):
+                if angles[i] is None:
+                    angles[i] = current_angle[i]
         
         speed = min(max(servo_speed), 40)
         print('speed: ', speed)
@@ -156,8 +165,13 @@ class WhiteArmSubscriber(Node):
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
 
-        # Determine whether to move the head only
-        if msg.data.find('id'):
+        print(msg.data)
+        print(type(msg.data))
+        print(('id' in msg.data))
+
+        # Determine whether to move one head only
+        
+        if 'id' in msg.data:
             print('Move one servo')
             self.move_one_servo_only(msg.data)
         else:
