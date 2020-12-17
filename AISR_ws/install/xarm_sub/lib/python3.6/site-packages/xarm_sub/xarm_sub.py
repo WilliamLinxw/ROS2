@@ -14,6 +14,8 @@ import pdb
 
 from xarm.wrapper import XArmAPI
 
+xarm_ip='192.168.64.77'
+
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../..'))
 
 # Flags for different testing situations
@@ -42,9 +44,8 @@ if is_arm_ready:
         """
         # The specific IP for the xArm
         # If a different IP is needed, uncommand lines above
-        ip = "192.168.1.217"
+        ip = xarm_ip
 ########################################################
-
 
 class WhiteArmSubscriber(Node):
 
@@ -85,80 +86,80 @@ class WhiteArmSubscriber(Node):
         # Get the current angle
         # Only work when the xArm is connected
         if is_arm_ready:
-            current_servo_angle_xArm = arm.get_servo_angle(servo_id=servo_id)
+            current_servo_angle_xArm = arm.get_servo_angle()[1]
 
-            # Angle offset
-            if servo_id == 6:
-                current_servo_angle = current_servo_angle_xArm + 54.5
-            elif servo_id == 7:
-                current_servo_angle = current_servo_angle_xArm - 26
-
+            print('Current xarm angle: ', current_servo_angle_xArm)
             servo_move_angle = move_head_dict['angle']
-            target_servo_angle = current_servo_angle + servo_move_angle
+            target_servo_angle = 144.5 - servo_move_angle
 
             print('Servo ID: ', servo_id)
             print('target angle: ', target_servo_angle)
+
+            all_target_servo_angle = current_servo_angle_xArm
+            all_target_servo_angle[servo_id] = target_servo_angle
+
+            print('All target angles: ', all_target_servo_angle)
         
-            arm.set_servo_angle(servo_id=servo_id, angle=target_servo_angle, is_radian=False, speed=10, wait=False)
+            arm.set_servo_angle(angle=all_target_servo_angle, is_radian=False, speed=40, wait=False)
             print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
 
 
     # Move any servo based on the message input
     def move_any_servo(self, message):
+        if len(message) > 1:
+            '''
+            This function is for moving according to the result data of learning
+            '''
+            angles = [None, None, None, None, None, None, None]
+            message_list = list(np.array(message.split(" "), dtype=np.float))
 
-        '''
-        This function is for moving according to the result data of learning
-        '''
-        angles = [None, None, None, None, None, None, None]
-        message_list = list(np.array(message.split(" "), dtype=np.float))
+            servo_id = message_list[::3]
+            servo_angle = message_list[1::3]
+            servo_speed = message_list[2::3]
+            servo_id = list(map(int, servo_id))
 
-        servo_id = message_list[::3]
-        servo_angle = message_list[1::3]
-        servo_speed = message_list[2::3]
-        servo_id = list(map(int, servo_id))
+            # Put specific servo angle into the angle list
+            i_angle = 0
+            for id in servo_id:
+                angles[id] = servo_angle[i_angle]
+                i_angle += 1
 
-        # Put specific servo angle into the angle list
-        i_angle = 0
-        for id in servo_id:
-            angles[id] = servo_angle[i_angle]
-            i_angle += 1
+            # Process the angle datas for the offsets
+            i_servo = 0
+            while i_servo <= 6:
+                if angles[i_servo] or angles[i_servo] == 0:
+                    if i_servo == 0:
+                        angles[i_servo] += -168
+                    elif i_servo == 1:
+                        angles[i_servo] += 68
+                    elif i_servo == 2:
+                        angles[i_servo] += 114
+                    elif i_servo == 3:
+                        angles[i_servo] += 58
+                    elif i_servo == 4:
+                        angles[i_servo] += 179
+                    elif i_servo == 5:
+                        angles[i_servo] += 54.5
+                    elif i_servo == 6:
+                        angles[i_servo] += -26
+                i_servo += 1
 
-        # Process the angle datas for the offsets
-        i_servo = 0
-        while i_servo <= 6:
-            if angles[i_servo] or angles[i_servo] == 0:
-                if i_servo == 0:
-                    angles[i_servo] += -168
-                elif i_servo == 1:
-                    angles[i_servo] += 68
-                elif i_servo == 2:
-                    angles[i_servo] += 114
-                elif i_servo == 3:
-                    angles[i_servo] += 58
-                elif i_servo == 4:
-                    angles[i_servo] += 179
-                elif i_servo == 5:
-                    angles[i_servo] += 54.5
-                elif i_servo == 6:
-                    angles[i_servo] += -26
-            i_servo += 1
+            # Get the current angle for servos that do not move
+            # Only work when the arm is connected
+            if is_arm_ready:
+                current_angle = arm.get_servo_angle()[1]
+                print(current_angle)
+                for i in range(len(angles)):
+                    if angles[i] is None:
+                        angles[i] = current_angle[i]
+            
+            speed = min(max(servo_speed), 40)
+            print('speed: ', speed)
+            print('angles: ', angles)
 
-        # Get the current angle for servos that do not move
-        # Only work when the arm is connected
-        if is_arm_ready:
-            current_angle = arm.get_servo_angle()[1]
-            print(current_angle)
-            for i in range(len(angles)):
-                if angles[i] is None:
-                    angles[i] = current_angle[i]
-        
-        speed = min(max(servo_speed), 40)
-        print('speed: ', speed)
-        print('angles: ', angles)
-
-        if is_arm_ready:
-            arm.set_servo_angle(angle=angles, speed=speed, is_radian=False, wait=False)
-            print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
+            if is_arm_ready:
+                arm.set_servo_angle(angle=angles, speed=speed, is_radian=False, wait=False)
+                print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
 
 
     # Callback function for ROS subscription
@@ -217,6 +218,14 @@ class WhiteArmSubscriber(Node):
                     self.move_any_servo(line)
 
 def main(args=None, action_name=None):
+    if is_arm_ready:
+        arm = XArmAPI(ip)
+        arm.motion_enable(enable=True)
+        arm.set_mode(0)
+        arm.set_state(state=0)
+
+    print('start')
+
     rclpy.init(args=args)
 
     white_arm_subscriber = WhiteArmSubscriber()
@@ -226,6 +235,7 @@ def main(args=None, action_name=None):
     if not is_ROS_ready:
         white_arm_subscriber.move_test(action_name)  
     else:
+        print('test')
         rclpy.spin(white_arm_subscriber)
 
         # Destroy the node explicitly
@@ -239,14 +249,6 @@ def main(args=None, action_name=None):
         print('xArm disconnected')
 
 if __name__ == '__main__':
-    if is_arm_ready:
-        arm = XArmAPI(ip)
-        arm.motion_enable(enable=True)
-        arm.set_mode(0)
-        arm.set_state(state=0)
-
-    print('start')
-    
     if len(sys.argv) > 1:
         main(action_name=sys.argv[1])
     else:
