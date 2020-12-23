@@ -14,13 +14,13 @@ import pdb
 
 from xarm.wrapper import XArmAPI
 
-xarm_ip='192.168.64.77'
+xarm_ip='192.168.1.217'
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '../../..'))
 
 # Flags for different testing situations
 # If both are false, just print out the text files
-is_arm_ready = False
+is_arm_ready = True
 is_ROS_ready = True
 
 # pdb.set_trace()
@@ -46,6 +46,13 @@ if is_arm_ready:
         # If a different IP is needed, uncommand lines above
         ip = xarm_ip
 ########################################################
+
+if is_arm_ready:
+    arm = XArmAPI(ip)
+    arm.motion_enable(enable=True)
+    arm.set_mode(0)
+    arm.set_state(state=0)
+    print('Connected!')
 
 class WhiteArmSubscriber(Node):
 
@@ -168,7 +175,7 @@ class WhiteArmSubscriber(Node):
 
         print(msg.data)
         print(type(msg.data))
-        print(('id' in msg.data))
+        print("If ID is specified for moving only one servo: ", ('id' in msg.data))
 
         # Determine whether to move one head only
         
@@ -218,11 +225,7 @@ class WhiteArmSubscriber(Node):
                     self.move_any_servo(line)
 
 def main(args=None, action_name=None):
-    if is_arm_ready:
-        arm = XArmAPI(ip)
-        arm.motion_enable(enable=True)
-        arm.set_mode(0)
-        arm.set_state(state=0)
+
 
     print('start')
 
