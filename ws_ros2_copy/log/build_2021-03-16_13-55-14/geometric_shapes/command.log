@@ -1,0 +1,1 @@
+Invoking command in '/home/caesar/Desktop/ws_ros2/build/geometric_shapes': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/caesar/Desktop/ws_ros2/src/geometric_shapes -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ws_ros2/install/geometric_shapes

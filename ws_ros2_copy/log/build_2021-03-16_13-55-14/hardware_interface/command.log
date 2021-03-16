@@ -1,0 +1,1 @@
+Invoking command in '/home/caesar/Desktop/ws_ros2/build/hardware_interface': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/caesar/Desktop/ws_ros2/src/ros2_control/hardware_interface -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ws_ros2/install/hardware_interface

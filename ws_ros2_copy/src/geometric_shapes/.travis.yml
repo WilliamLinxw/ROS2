@@ -1,0 +1,34 @@
+# This config file for Travis CI utilizes https://github.com/ros-planning/moveit_ci/ package.
+sudo: required
+dist: xenial  # distro used by Travis, moveit_ci uses the docker image's distro
+services:
+  - docker
+language: cpp
+cache: ccache
+compiler: gcc
+
+notifications:
+  email:
+    recipients:
+      - 130s@2000.jukuin.keio.ac.jp
+env:
+  global:
+    - ROS_DISTRO=foxy
+    - ROS_REPO=ros
+    - UPSTREAM_WORKSPACE=geometric_shapes.repos
+    - CXXFLAGS="-Wall -Wextra -Wwrite-strings -Wunreachable-code -Wpointer-arith -Wredundant-decls -Wno-unused-parameter"
+    - WARNINGS_OK=false
+  matrix:
+    - TEST="ament_lint"  # TODO(henningkayser): re-enable clang-format
+    - ROS_DISTRO=foxy TEST=code-coverage
+
+matrix:
+  include:
+    - compiler: clang
+      env: TEST=clang-tidy-fix
+
+before_script:
+  - git clone -q -b ros2 --depth=1 https://github.com/ros-planning/moveit_ci.git .moveit_ci
+
+script:
+  - .moveit_ci/travis.sh

@@ -1,0 +1,17 @@
+CMake Error at CMakeLists.txt:22 (find_package):
+  By not providing "Findobject_recognition_msgs.cmake" in CMAKE_MODULE_PATH
+  this project has asked CMake to find a package configuration file provided
+  by "object_recognition_msgs", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "object_recognition_msgs" with any of the following names:
+
+    object_recognition_msgsConfig.cmake
+    object_recognition_msgs-config.cmake
+
+  Add the installation prefix of "object_recognition_msgs" to
+  CMAKE_PREFIX_PATH or set "object_recognition_msgs_DIR" to a directory
+  containing one of the above files.  If "object_recognition_msgs" provides a
+  separate development package or SDK, be sure it has been installed.
+
+

@@ -1,0 +1,37 @@
+[0.026s] Invoking command in '/home/caesar/Desktop/ws_ros2/build/hardware_interface': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/caesar/Desktop/ws_ros2/src/ros2_control/hardware_interface -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ws_ros2/install/hardware_interface
+[1.200s] -- The C compiler identification is GNU 7.5.0
+[2.186s] -- The CXX compiler identification is GNU 7.5.0
+[2.254s] -- Check for working C compiler: /usr/bin/cc
+[2.421s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.422s] -- Detecting C compiler ABI info
+[2.565s] -- Detecting C compiler ABI info - done
+[2.570s] -- Detecting C compile features
+[2.907s] -- Detecting C compile features - done
+[2.910s] -- Check for working CXX compiler: /usr/bin/c++
+[3.026s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.027s] -- Detecting CXX compiler ABI info
+[3.140s] -- Detecting CXX compiler ABI info - done
+[3.145s] -- Detecting CXX compile features
+[3.568s] -- Detecting CXX compile features - done
+[3.678s] -- Found ament_cmake: 0.7.5 (/opt/ros/dashing/share/ament_cmake/cmake)
+[3.814s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[3.814s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.197s] CMake Error at CMakeLists.txt:14 (find_package):
+[4.197s]   By not providing "Findcontrol_msgs.cmake" in CMAKE_MODULE_PATH this project
+[4.197s]   has asked CMake to find a package configuration file provided by
+[4.197s]   "control_msgs", but CMake did not find one.
+[4.198s] 
+[4.198s]   Could not find a package configuration file provided by "control_msgs" with
+[4.198s]   any of the following names:
+[4.199s] 
+[4.199s]     control_msgsConfig.cmake
+[4.199s]     control_msgs-config.cmake
+[4.199s] 
+[4.200s]   Add the installation prefix of "control_msgs" to CMAKE_PREFIX_PATH or set
+[4.200s]   "control_msgs_DIR" to a directory containing one of the above files.  If
+[4.200s]   "control_msgs" provides a separate development package or SDK, be sure it
+[4.200s]   has been installed.
+[4.201s] 
+[4.201s] 
+[4.201s] -- Configuring incomplete, errors occurred!
+[4.201s] See also "/home/caesar/Desktop/ws_ros2/build/hardware_interface/CMakeFiles/CMakeOutput.log".
