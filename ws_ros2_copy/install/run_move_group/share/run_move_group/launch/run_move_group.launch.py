@@ -24,7 +24,6 @@ def load_yaml(package_name, file_path):
     except EnvironmentError: # parent of IOError, OSError *and* WindowsError where available
         return None
 
-
 def generate_launch_description():
 
     # planning_context
