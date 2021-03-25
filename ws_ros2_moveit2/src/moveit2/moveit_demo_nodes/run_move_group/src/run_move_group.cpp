@@ -88,7 +88,7 @@ int main(int argc, char** argv)
   
   
   // Planning to paint a square
-  double center_x = 0.250;
+  double center_x = 0.150;
   double center_y = -0.300;
   double center_z = 0.500;
   double side;
@@ -178,7 +178,7 @@ int main(int argc, char** argv)
 
   // prompt("Press 'Enter' to continue the demo");
   // You can execute a trajectory like this.
-  move_group.execute(trajectory);
+  //move_group.execute(trajectory);
 
   RCLCPP_INFO(LOGGER, "Plan 1 (pose goal) %s", success ? "SUCCEEDED" : "FAILED");
 

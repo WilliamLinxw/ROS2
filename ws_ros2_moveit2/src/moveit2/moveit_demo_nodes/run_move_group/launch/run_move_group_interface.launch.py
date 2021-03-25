@@ -41,7 +41,7 @@ def generate_launch_description():
     run_move_group_demo = Node(name='run_move_group',
                                package='run_move_group',
                                executable='run_move_group',
-                               prefix='xterm -e',
+                               #prefix='xterm -e',
                                output='screen',
                                parameters=[robot_description,
                                            robot_description_semantic,
