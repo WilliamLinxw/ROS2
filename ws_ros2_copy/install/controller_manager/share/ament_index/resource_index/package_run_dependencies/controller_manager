@@ -1,1 +1,0 @@
-ament_index_cpp;controller_interface;hardware_interface;pluginlib;rclcpp;rcpputils;ament_cmake_gmock;ament_cmake_gtest;ament_lint_auto;ament_lint_common;test_robot_hardware

@@ -1,8 +1,0 @@
-CMake Error at urdf_sensor/cmake_install.cmake:41 (file):
-  file INSTALL cannot set permissions on
-  "/home/caesar/Desktop/ws_ros2/install/urdfdom_headers/include/urdf_sensor"
-Call Stack (most recent call first):
-  cmake_install.cmake:69 (include)
-
-
-make: *** [install] Error 1
