@@ -46,8 +46,8 @@ int main(int argc, char** argv)
   move_group.setNamedTarget("write_pos");
   move_group.move();
 
-  moveit::planning_interface::MoveGroupInterface::Plan my_plan;
-  bool success = (move_group.plan(my_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
+  // moveit::planning_interface::MoveGroupInterface::Plan my_plan;
+  // bool success = (move_group.plan(my_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
 
   
   
@@ -87,102 +87,210 @@ int main(int argc, char** argv)
 
   
   
-  // Planning to paint a square
-  double center_x = 0.150;
-  double center_y = -0.300;
-  double center_z = 0.500;
+  // // Planning to paint a square
+  // double center_x = 0.370;
+  // double center_y = -0.217;
+  // double center_z = 0.566;
+  // double side;
+  // double i;
+  // geometry_msgs::msg::Pose target_pose;
+
+  // // Cartesian Paths
+  // std::vector<geometry_msgs::msg::Pose> waypoints;
+  // for(side = 0.1; side <= 1; side += 0.1){
+  //   for(i = 0; i <= 8; i += 1)
+  //   {
+  //     if(i == 0){
+  //       // Move to the top of the square
+  //       target_pose.position.x = center_x + side/2;
+  //       target_pose.position.y = center_y;
+  //       target_pose.position.z = center_z;
+  //       waypoints.push_back(target_pose);
+  //     }
+  //     if(i == 1){
+  //       // Move to the upper right of the square
+  //       target_pose.position.x = center_x + side/2;
+  //       target_pose.position.y = center_y + side/2;
+  //       target_pose.position.z = center_z;
+  //       waypoints.push_back(target_pose);
+  //     }
+  //     if(i == 2){
+  //       // Move to the right of the square-
+  //       target_pose.position.x = center_x;
+  //       target_pose.position.y = center_y + side/2;
+  //       target_pose.position.z = center_z;
+  //       waypoints.push_back(target_pose);
+  //     }
+  //     if(i == 3){
+  //       // Move to the lower right of the square
+  //       target_pose.position.x = center_x - side/2;
+  //       target_pose.position.y = center_y + side/2;
+  //       target_pose.position.z = center_z;
+  //       waypoints.push_back(target_pose);
+  //     }
+  //     if(i == 4){
+  //       // Move to the bottom of the square
+  //       target_pose.position.x = center_x - side/2;
+  //       target_pose.position.y = center_y;
+  //       target_pose.position.z = center_z;
+  //       waypoints.push_back(target_pose);
+  //     }
+  //     if(i == 5){
+  //       // Move to the lower left of the square
+  //       target_pose.position.x = center_x - side/2;
+  //       target_pose.position.y = center_y - side/2;
+  //       target_pose.position.z = center_z;
+  //       waypoints.push_back(target_pose);
+  //     }
+  //     if(i == 6){
+  //       // Move to the left of the square
+  //       target_pose.position.x = center_x;
+  //       target_pose.position.y = center_y - side/2;
+  //       target_pose.position.z = center_z;
+  //       waypoints.push_back(target_pose);
+  //     }
+  //     if(i == 7){
+  //       // Move to the upper left of the square
+  //       target_pose.position.x = center_x + side/2;
+  //       target_pose.position.y = center_y - side/2;
+  //       target_pose.position.z = center_z;
+  //       waypoints.push_back(target_pose);
+  //     }
+  //     if(i == 8){
+  //       // Move back to the top of the square
+  //       target_pose.position.x = center_x + side/2;
+  //       target_pose.position.y = center_y;
+  //       target_pose.position.z = center_z;
+  //       waypoints.push_back(target_pose);
+  //     }
+  //   }
+  // }
+  // // move_group.setPositionTarget(0.299,-0.249,0.698);
+
+  // // Now, we call the planner to compute the plan and visualize it.
+  // // Note that we are just planning, not asking move_group
+  // // to actually move the robot.
+  // moveit_msgs::msg::RobotTrajectory trajectory;
+  // const double jump_threshold = 0.0;
+  // const double eef_step = 0.01;
+  // double fraction = move_group.computeCartesianPath(waypoints, eef_step, jump_threshold, trajectory);
+  // RCLCPP_INFO(LOGGER, "Visualizing plan 4 (Cartesian path) (%.2f%% acheived)", fraction * 100.0);
+
+  // // prompt("Press 'Enter' to continue the demo");
+  // // You can execute a trajectory like this.
+  // // move_group.execute(trajectory);
+
+  // RCLCPP_INFO(LOGGER, "Plan 1 (pose goal) %s", success ? "SUCCEEDED" : "FAILED");
+
+
+
+// double center_x = 0.370;
+// double center_y = -0.217;
+// double center_z = 0.566;
+// Planning to paint a series of squares
+  double center_x;
+  double center_y;
+  double center_z;
+  double largest_side = 0.1;
   double side;
   double i;
   geometry_msgs::msg::Pose target_pose;
+  RCLCPP_INFO(LOGGER, "Side length of the square: %f", largest_side);
 
   // Cartesian Paths
-  std::vector<geometry_msgs::msg::Pose> waypoints;
-  for(side = 0.02; side <= 0.3; side += 0.02){
-    for(i = 0; i <= 8; i += 1)
-    {
-      if(i == 0){
-        // Move to the top of the square
-        target_pose.position.x = center_x + side/2;
-        target_pose.position.y = center_y;
-        target_pose.position.z = center_z;
-        waypoints.push_back(target_pose);
-      }
-      if(i == 1){
-        // Move to the upper left of the square
-        target_pose.position.x = center_x + side/2;
-        target_pose.position.y = center_y + side/2;
-        target_pose.position.z = center_z;
-        waypoints.push_back(target_pose);
-      }
-      if(i == 2){
-        // Move to the left of the square-
-        target_pose.position.x = center_x;
-        target_pose.position.y = center_y + side/2;
-        target_pose.position.z = center_z;
-        waypoints.push_back(target_pose);
-      }
-      if(i == 3){
-        // Move to the lower left of the square
-        target_pose.position.x = center_x - side/2;
-        target_pose.position.y = center_y + side/2;
-        target_pose.position.z = center_z;
-        waypoints.push_back(target_pose);
-      }
-      if(i == 4){
-        // Move to the bottom of the square
-        target_pose.position.x = center_x - side/2;
-        target_pose.position.y = center_y;
-        target_pose.position.z = center_z;
-        waypoints.push_back(target_pose);
-      }
-      if(i == 5){
-        // Move to the lower right of the square
-        target_pose.position.x = center_x - side/2;
-        target_pose.position.y = center_y - side/2;
-        target_pose.position.z = center_z;
-        waypoints.push_back(target_pose);
-      }
-      if(i == 6){
-        // Move to the right of the square
-        target_pose.position.x = center_x;
-        target_pose.position.y = center_y - side/2;
-        target_pose.position.z = center_z;
-        waypoints.push_back(target_pose);
-      }
-      if(i == 7){
-        // Move to the upper right of the square
-        target_pose.position.x = center_x + side/2;
-        target_pose.position.y = center_y - side/2;
-        target_pose.position.z = center_z;
-        waypoints.push_back(target_pose);
-      }
-      if(i == 8){
-        // Move back to the top of the square
-        target_pose.position.x = center_x + side/2;
-        target_pose.position.y = center_y;
-        target_pose.position.z = center_z;
-        waypoints.push_back(target_pose);
+  for(center_z = 0.250; center_z <= 1.0; center_z += 0.05){
+    for(center_y = -1.0; center_y <= 0.0; center_y += 0.05){
+      for(center_x = -0.1; center_x <= 0.500; center_x += 0.05){
+        std::vector<geometry_msgs::msg::Pose> waypoints;
+        for(side = 0.02; side <= largest_side; side += 0.02){
+          for(i = 0; i <= 8; i += 1)
+          {
+            if(i == 0){
+              // Move to the top of the square
+              target_pose.position.x = center_x + side/2;
+              target_pose.position.y = center_y;
+              target_pose.position.z = center_z;
+              waypoints.push_back(target_pose);
+            }
+            if(i == 1){
+              // Move to the upper right of the square
+              target_pose.position.x = center_x + side/2;
+              target_pose.position.y = center_y + side/2;
+              target_pose.position.z = center_z;
+              waypoints.push_back(target_pose);
+            }
+            if(i == 2){
+              // Move to the right of the square-
+              target_pose.position.x = center_x;
+              target_pose.position.y = center_y + side/2;
+              target_pose.position.z = center_z;
+              waypoints.push_back(target_pose);
+            }
+            if(i == 3){
+              // Move to the lower right of the square
+              target_pose.position.x = center_x - side/2;
+              target_pose.position.y = center_y + side/2;
+              target_pose.position.z = center_z;
+              waypoints.push_back(target_pose);
+            }
+            if(i == 4){
+              // Move to the bottom of the square
+              target_pose.position.x = center_x - side/2;
+              target_pose.position.y = center_y;
+              target_pose.position.z = center_z;
+              waypoints.push_back(target_pose);
+            }
+            if(i == 5){
+              // Move to the lower left of the square
+              target_pose.position.x = center_x - side/2;
+              target_pose.position.y = center_y - side/2;
+              target_pose.position.z = center_z;
+              waypoints.push_back(target_pose);
+            }
+            if(i == 6){
+              // Move to the left of the square
+              target_pose.position.x = center_x;
+              target_pose.position.y = center_y - side/2;
+              target_pose.position.z = center_z;
+              waypoints.push_back(target_pose);
+            }
+            if(i == 7){
+              // Move to the upper left of the square
+              target_pose.position.x = center_x + side/2;
+              target_pose.position.y = center_y - side/2;
+              target_pose.position.z = center_z;
+              waypoints.push_back(target_pose);
+            }
+            if(i == 8){
+              // Move back to the top of the square
+              target_pose.position.x = center_x + side/2;
+              target_pose.position.y = center_y;
+              target_pose.position.z = center_z;
+              waypoints.push_back(target_pose);
+            }
+          }
+        }
+
+        // Now, we call the planner to compute the plan and visualize it.
+        // Note that we are just planning, not asking move_group
+        // to actually move the robot.
+        moveit_msgs::msg::RobotTrajectory trajectory;
+        const double jump_threshold = 0.0;
+        const double eef_step = 0.01;
+        double fraction = move_group.computeCartesianPath(waypoints, eef_step, jump_threshold, trajectory);
+        
+        if(fraction >= 0.8){
+          RCLCPP_INFO(LOGGER, "Center of the square: X: %f, Y: %f, Z: %f", center_x, center_y, center_z);
+          RCLCPP_INFO(LOGGER, "Visualizing plan 4 (Cartesian path) (%.2f%% acheived)", fraction * 100.0);
+	}
+        // prompt("Press 'Enter' to continue the demo");
+        // You can execute a trajectory like this.
+        // move_group.execute(trajectory);
+
+        // RCLCPP_INFO(LOGGER, "Plan 1 (pose goal) %s", success ? "SUCCEEDED" : "FAILED");
       }
     }
   }
-  // move_group.setPositionTarget(0.299,-0.249,0.698);
-
-  // Now, we call the planner to compute the plan and visualize it.
-  // Note that we are just planning, not asking move_group
-  // to actually move the robot.
-  moveit_msgs::msg::RobotTrajectory trajectory;
-  const double jump_threshold = 0.0;
-  const double eef_step = 0.01;
-  double fraction = move_group.computeCartesianPath(waypoints, eef_step, jump_threshold, trajectory);
-  RCLCPP_INFO(LOGGER, "Visualizing plan 4 (Cartesian path) (%.2f%% acheived)", fraction * 100.0);
-
-  // prompt("Press 'Enter' to continue the demo");
-  // You can execute a trajectory like this.
-  //move_group.execute(trajectory);
-
-  RCLCPP_INFO(LOGGER, "Plan 1 (pose goal) %s", success ? "SUCCEEDED" : "FAILED");
-
-
 
 
   // move to write position

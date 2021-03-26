@@ -117,8 +117,8 @@ Visualization Manager:
             Value: true
           panda_link8:
             Alpha: 1
-            Show Axes: true
-            Show Trail: true
+            Show Axes: false
+            Show Trail: false
           panda_rightfinger:
             Alpha: 1
             Show Axes: false
@@ -191,7 +191,7 @@ Visualization Manager:
         panda_link8:
           Alpha: 1
           Show Axes: false
-          Show Trail: true
+          Show Trail: false
         panda_rightfinger:
           Alpha: 1
           Show Axes: false
@@ -296,7 +296,7 @@ Visualization Manager:
           panda_link8:
             Alpha: 1
             Show Axes: false
-            Show Trail: true
+            Show Trail: false
           panda_rightfinger:
             Alpha: 1
             Show Axes: false
@@ -400,7 +400,7 @@ Visualization Manager:
           panda_link8:
             Alpha: 1
             Show Axes: false
-            Show Trail: true
+            Show Trail: false
           panda_rightfinger:
             Alpha: 1
             Show Axes: false
