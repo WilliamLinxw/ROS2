@@ -1,3 +1,0 @@
-[console_scripts]
-xarm_listener = xarm_sub.xarm_sub:main
-

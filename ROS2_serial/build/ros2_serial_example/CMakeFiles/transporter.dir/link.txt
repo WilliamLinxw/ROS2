@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC   -shared -Wl,-soname,libtransporter.so -o libtransporter.so CMakeFiles/transporter.dir/src/transporter.cpp.o -Wl,-rpath,/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_example: libring_buffer.so 

@@ -1,4 +1,0 @@
-[0.018s] Invoking command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/serial': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/caesar/Desktop/ROS2/ROS2_serial/src/serial-ros2 =sensor_msgs;px4_msgs -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/ROS2_serial/install/serial
-[0.030s] CMake Error: The source directory "/home/caesar/Desktop/ROS2/ROS2_serial/build/serial/=sensor_msgs;px4_msgs" does not exist.
-[0.030s] Specify --help for usage, or press the help button on the CMake GUI.
-[0.036s] Invoked command in '/home/caesar/Desktop/ROS2/ROS2_serial/build/serial' returned '1': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/caesar/Desktop/ROS2/ROS2_serial/src/serial-ros2 =sensor_msgs;px4_msgs -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/ROS2_serial/install/serial

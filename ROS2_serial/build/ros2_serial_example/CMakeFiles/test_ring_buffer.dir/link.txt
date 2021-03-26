@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/test_ring_buffer.dir/test/test_ring_buffer.cpp.o  -o test_ring_buffer -Wl,-rpath,/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_example gtest/libgtest_main.a gtest/libgtest.a libring_buffer.so -pthread 

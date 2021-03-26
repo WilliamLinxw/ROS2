@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/test_transporter.dir/test/test_transporter.cpp.o  -o test_transporter -Wl,-rpath,/home/caesar/Desktop/ROS2/ROS2_serial/build/ros2_serial_example gtest/libgtest_main.a gtest/libgtest.a libtransporter.so -pthread libring_buffer.so 
