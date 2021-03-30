@@ -1,7 +1,7 @@
 
 # MoveIt 2 Beta - MoveGroup Demo
 
-This demo is for AISR specifically. All files has been changed to AISR's, including the URDF, moving script, etc.
+This demo is for AISR specifically. All files has been changed to AISR's, including the URDF, moving script, etc. However, the names are still unchanged like Panda, Fanuc... This issue will be fixed.
 
 This demo includes a launch configuration for running MoveGroup and a separate MoveGroupInterface demo node.
  
