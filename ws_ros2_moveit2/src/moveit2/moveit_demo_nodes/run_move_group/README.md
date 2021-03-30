@@ -1,5 +1,7 @@
 
-# MoveIt 2 Beta - MoveGroup Demo for AISR specifically. All files has been changed to AISR's, including the URDF, moving script, etc.
+# MoveIt 2 Beta - MoveGroup Demo
+
+This demo is for AISR specifically. All files has been changed to AISR's, including the URDF, moving script, etc.
 
 This demo includes a launch configuration for running MoveGroup and a separate MoveGroupInterface demo node.
  
