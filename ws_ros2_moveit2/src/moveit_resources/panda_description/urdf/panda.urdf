@@ -678,7 +678,7 @@
     name="panda_joint8"
     type="fixed">
     <origin
-      xyz="0 -0.12000024 -0.325247"
+      xyz="0 -0.10 -0.375247"
       rpy="0 0 0" />
     <parent
       link="panda_link7" />
@@ -690,7 +690,7 @@
   <joint name="white_hand" type="revolute">
     <parent link="panda_link8"/>
     <child link="panda_hand"/>
-    <origin rpy="-1.57 1.57 3.14" xyz="0 0.12000024 0.050247"/>
+    <origin rpy="-1.57 1.57 3.14" xyz="0 0.10 0.100247"/>
     <axis xyz="-1 0 0" />
     <limit
       lower="-3.14"
