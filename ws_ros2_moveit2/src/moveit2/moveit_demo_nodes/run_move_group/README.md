@@ -1,6 +1,5 @@
-<img src="https://github.com/ros-planning/moveit.ros.org/blob/master/assets/logo/moveit2/moveit_logo-black.png" alt="MoveIt 2 Logo" width="300"/>
 
-# MoveIt 2 Beta - MoveGroup Demo
+# MoveIt 2 Beta - MoveGroup Demo for AISR specifically. All files has been changed to AISR's, including the URDF, moving script, etc.
 
 This demo includes a launch configuration for running MoveGroup and a separate MoveGroupInterface demo node.
  
