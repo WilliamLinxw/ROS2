@@ -1,16 +1,22 @@
+#!/usr/bin/env python3
+#!coding=utf-8
+
 import numpy as np
 import cv2
 from matplotlib import pyplot as plt
-# import matplotlib
-# matplotlib.use('TkAgg')
 import json
 import os
 import sys
 import time
+import rclpy
+from rclpy.node import Node
+from std_msgs.msg import String
 
 
-class Calligraphy:
+class Calligraphy_Node(Node):
     def __init__(self):
+        super().__init__('calligraphy_talker')
+        self.pub = self.create_publihser(String, 'arm_strokes')
         self.WORD_DIR = '/home/caesar/Desktop/tad-ros2/tad_robot/pyscript/calligraphy/data/'
         # dst = np.float32([[50,150],[50,250],[-50,250]])
         # dst = np.float32([[50, 250], [-50, 250], [-50, 150]])
@@ -86,3 +92,19 @@ class Calligraphy:
         if axis == "-":
             pass
         return new_words_strokes
+
+def main(args=None):
+    rclpy.init(args=args)
+
+    node = Calligraphy_Node()
+
+    strings = "桃之夭夭 灼灼其华 之子于归 宜其室家".split(" ")
+    start_pos = [0.417,-0.241,0.50]
+
+    rclpy.spin(node)
+
+    node.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
