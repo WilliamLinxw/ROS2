@@ -11,13 +11,13 @@ import sys
 import time
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
+from std_msgs.msg import Float64MultiArray
 
 
 class Calligraphy_Node(Node):
     def __init__(self):
         super().__init__('calligraphy_talker')
-        self.pub = self.create_publisher(String, 'arm_strokes')
+        self.pub = self.create_publisher(Float64MultiArray, 'arm_strokes')
         self.WORD_DIR = '/home/caesar/Desktop/tad-ros2/tad_robot/pyscript/calligraphy/data/'
         self.strings = "桃之夭夭 灼灼其华 之子于归 宜其室家".split(" ")
 
@@ -119,14 +119,18 @@ def main(args=None):
     # Set the center of the actual writing plane
     arm_start_pos = [0.417, -0.241, 0.50]
     arm_strokes = node.get_arm_strokes(words_strokes, arm_start_pos)
-    print(arm_strokes)
 
-    msg = String()
-    msg.data = str(arm_strokes)
-    node.pub.publish(msg)
+    # Change type to array for pubilshing
+    arm_strokes_array = np.array(arm_strokes)
+    for i in range(len(arm_strokes_array)):
+        arm_strokes_array[i] = np.array(arm_strokes_array[i])
+
+    # msg = Float64MultiArray()
+    # msg.data = np.array([2.0,3.0,4.0])
+    # node.pub.publish(msg)
 
     # Visualize the writing on the actual writing plane if set True
-    if 0:
+    if 1:
         ax1 = plt.axes(projection='3d')
         for word in arm_strokes:
             for stroke in word:
