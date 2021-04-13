@@ -121,8 +121,12 @@ def main(args=None):
     arm_strokes = node.get_arm_strokes(words_strokes, arm_start_pos)
     print(arm_strokes)
 
+    msg = String()
+    msg.data = str(arm_strokes)
+    node.pub.publish(msg)
+
     # Visualize the writing on the actual writing plane if set True
-    if 1:
+    if 0:
         ax1 = plt.axes(projection='3d')
         for word in arm_strokes:
             for stroke in word:
