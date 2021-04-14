@@ -20,9 +20,11 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '../../..'))
 
 # Flags for different testing situations
 # If both are false, just print out the text files
-is_arm_ready = True
+is_arm_ready = False
 is_ROS_ready = True
 
+# Flag of whether the arm is triggered
+is_arm_triggered = False
 # pdb.set_trace()
 
 #######################################################
@@ -52,6 +54,7 @@ if is_arm_ready:
     arm.motion_enable(enable=True)
     arm.set_mode(0)
     arm.set_state(state=0)
+    is_arm_triggered = True
     print('Connected!')
 
 class WhiteArmSubscriber(Node):
@@ -172,19 +175,29 @@ class WhiteArmSubscriber(Node):
     # Callback function for ROS subscription
     def listener_callback(self, msg):
         self.get_logger().info('I heard: "%s"' % msg.data)
+        global is_arm_triggered
 
-        print(msg.data)
-        print(type(msg.data))
         print("If ID is specified for moving only one servo: ", ('id' in msg.data))
-
+        print("Triggered?： ", is_arm_triggered)
         # Determine whether to move one head only
-        
-        if 'id' in msg.data:
-            print('Move one servo')
-            self.move_one_servo_only(msg.data)
-        else:
-            print('Move any servo')
-            self.move_any_servo(msg.data)
+        if msg.data == 'open_white_arm':
+            arm.motion_enable(enable=True)
+            arm.set_mode(0)
+            arm.set_state(state=0)
+            is_arm_triggered = True
+            print('xArm is triggered')
+        elif msg.data == 'close_white_arm':
+            arm.motion_enable(enable=False)
+            arm.set_state(state=4)
+            is_arm_triggered = False
+            print('xArm is stopped')
+        if is_arm_triggered:
+            if 'id' in msg.data:
+                print('Move one servo')
+                self.move_one_servo_only(msg.data)
+            else:
+                print('Move any servo')
+                self.move_any_servo(msg.data)
 
         # # Get list for angles and speeds
         # angles_speeds= list(np.array(msg.data.split(" "), dtype=np.float))
