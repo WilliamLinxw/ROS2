@@ -35,11 +35,11 @@ class WhiteArmTrigger(Node):
             arm.motion_enable(enable=True)
             arm.set_mode(0)
             arm.set_state(state=0)
-            print('xArm is in sport state now')
+            print('xArm is triggered')
         elif msg.data == 'close_white_arm':
             arm.motion_enable(enable=False)
             arm.set_state(state=4)
-            print('xArm is in stop state now')
+            print('xArm is stopped')
     
 def main(args=None, action_name=None):
 
