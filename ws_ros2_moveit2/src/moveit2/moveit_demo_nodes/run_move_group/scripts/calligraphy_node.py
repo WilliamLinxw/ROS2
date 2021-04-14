@@ -128,8 +128,15 @@ def main(args=None):
 
     input("-------- Press Enter to publish --------")
 
-    my_array_for_publishing = Float64MultiArray(data=arm_strokes_array[0][0][0])
-    node.pub.publish(my_array_for_publishing)
+    for word in arm_strokes_array:
+        for stroke in word:
+            for point in stroke:
+                print(point)
+                my_array_for_publishing = Float64MultiArray(data=point)
+                node.pub.publish(my_array_for_publishing)
+    
+    
+    print('Published!')
 
     # Visualize the writing on the actual writing plane if set True
     if 0:
