@@ -14,7 +14,7 @@ class MinimalSubscriber : public rclcpp::Node{
     : Node("minimal_subscriber")
     {
       subscription_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
-      "topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
+      "arm_strokes", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1));
     }
 
   private:
