@@ -1,0 +1,25 @@
+[35m[1mScanning dependencies of target talker[0m
+[ 50%] Built target listener
+[ 75%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalPublisher::timer_callback()[m[K’:
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:29:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ was not declared in this scope
+       [01;31m[Kvector[m[K<float> obj;
+       [01;31m[K^~~~~~[m[K
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:29:7:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/c++/7/vector:64:0[m[K,
+                 from [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:5[m[K:
+[01m[K/usr/include/c++/7/bits/stl_vector.h:216:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector[m[K’
+     class [01;36m[Kvector[m[K : protected _Vector_base<_Tp, _Alloc>
+           [01;36m[K^~~~~~[m[K
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:29:14:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+       vector<[01;31m[Kfloat[m[K> obj;
+              [01;31m[K^~~~~[m[K
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:31:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kobj[m[K’ was not declared in this scope
+       message.data = [01;31m[Kobj[m[K.push_back(count_++);
+                      [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/talker.dir/src/publisher_member_function.cpp.o] Error 1
+CMakeFiles/talker.dir/build.make:62: recipe for target 'CMakeFiles/talker.dir/src/publisher_member_function.cpp.o' failed
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/talker.dir/all' failed
+Makefile:140: recipe for target 'all' failed
+make[1]: *** [CMakeFiles/talker.dir/all] Error 2
+make: *** [all] Error 2

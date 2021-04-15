@@ -1,0 +1,15 @@
+[0.015s] Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub -- -j4 -l4
+[0.089s] [35m[1mScanning dependencies of target listener[0m
+[0.116s] [ 25%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[0.121s] [ 75%] Built target talker
+[1.250s] [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr) const[m[K’:
+[1.250s] [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:23:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr {aka const class std::shared_ptr<std_msgs::msg::Float64MultiArray_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kdata[m[K’
+[1.250s]        std::cout << msg.[01;31m[Kdata[m[K << std::endl;
+[1.250s]                         [01;31m[K^~~~[m[K
+[1.979s] CMakeFiles/listener.dir/build.make:62: recipe for target 'CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o' failed
+[1.980s] make[2]: *** [CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[1.980s] make[1]: *** [CMakeFiles/listener.dir/all] Error 2
+[1.980s] CMakeFiles/Makefile2:136: recipe for target 'CMakeFiles/listener.dir/all' failed
+[1.982s] Makefile:140: recipe for target 'all' failed
+[1.983s] make: *** [all] Error 2
+[1.984s] Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub -- -j4 -l4

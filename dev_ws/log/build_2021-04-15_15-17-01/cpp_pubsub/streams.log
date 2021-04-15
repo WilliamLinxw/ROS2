@@ -1,0 +1,75 @@
+[0.043s] Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub
+[0.604s] -- The C compiler identification is GNU 7.5.0
+[1.250s] -- The CXX compiler identification is GNU 7.5.0
+[1.303s] -- Check for working C compiler: /usr/bin/cc
+[1.502s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.504s] -- Detecting C compiler ABI info
+[1.637s] -- Detecting C compiler ABI info - done
+[1.646s] -- Detecting C compile features
+[1.906s] -- Detecting C compile features - done
+[1.909s] -- Check for working CXX compiler: /usr/bin/c++
+[1.994s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.995s] -- Detecting CXX compiler ABI info
+[2.082s] -- Detecting CXX compiler ABI info - done
+[2.086s] -- Detecting CXX compile features
+[2.505s] -- Detecting CXX compile features - done
+[2.561s] -- Found ament_cmake: 0.7.5 (/opt/ros/dashing/share/ament_cmake/cmake)
+[2.668s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[2.668s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.986s] -- Found rclcpp: 0.7.14 (/opt/ros/dashing/share/rclcpp/cmake)
+[3.116s] -- Found rosidl_adapter: 0.7.9 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[3.260s] -- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+[3.271s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.288s] -- Looking for pthread.h
+[3.403s] -- Looking for pthread.h - found
+[3.410s] -- Looking for pthread_create
+[3.494s] -- Looking for pthread_create - not found
+[3.495s] -- Looking for pthread_create in pthreads
+[3.573s] -- Looking for pthread_create in pthreads - not found
+[3.573s] -- Looking for pthread_create in pthread
+[3.682s] -- Looking for pthread_create in pthread - found
+[3.684s] -- Found Threads: TRUE  
+[3.833s] -- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)
+[3.891s] -- Found ament_lint_auto: 0.7.12 (/opt/ros/dashing/share/ament_lint_auto/cmake)
+[4.089s] -- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code
+[4.092s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.093s] -- Configured cppcheck include dirs: 
+[4.096s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.098s] -- Added test 'lint_cmake' to check CMake code style
+[4.102s] -- Added test 'uncrustify' to check C / C++ code style
+[4.104s] -- Added test 'xmllint' to check XML markup files
+[4.109s] -- Configuring done
+[4.360s] -- Generating done
+[4.362s] -- Build files have been written to: /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub
+[4.367s] Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub
+[4.371s] Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub -- -j4 -l4
+[4.417s] [35m[1mScanning dependencies of target listener[0m
+[4.417s] [35m[1mScanning dependencies of target talker[0m
+[4.810s] [ 50%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[4.810s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[7.222s] [ 75%] [32m[1mLinking CXX executable talker[0m
+[7.339s] [100%] [32m[1mLinking CXX executable listener[0m
+[7.515s] [100%] Built target talker
+[7.522s] [100%] Built target listener
+[7.537s] Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub -- -j4 -l4
+[7.577s] Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub --target install -- -j4 -l4
+[7.638s] [100%] Built target listener
+[7.638s] [100%] Built target talker
+[7.659s] [36mInstall the project...[0m
+[7.670s] -- Install configuration: ""
+[7.670s] -- Installing: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[7.671s] -- Set runtime path of "/home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""
+[7.671s] -- Installing: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener
+[7.672s] -- Set runtime path of "/home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""
+[7.672s] -- Installing: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[7.672s] -- Installing: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[7.672s] -- Installing: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[7.672s] -- Installing: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[7.673s] -- Installing: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[7.673s] -- Installing: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[7.673s] -- Installing: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[7.673s] -- Installing: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[7.673s] -- Installing: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[7.673s] -- Installing: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[7.673s] -- Installing: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[7.677s] Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub --target install -- -j4 -l4

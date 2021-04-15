@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target talker[0m
+[ 50%] Built target listener
+[ 75%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+CMakeFiles/talker.dir/build.make:62: recipe for target 'CMakeFiles/talker.dir/src/publisher_member_function.cpp.o' failed
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/talker.dir/all' failed
+Makefile:140: recipe for target 'all' failed

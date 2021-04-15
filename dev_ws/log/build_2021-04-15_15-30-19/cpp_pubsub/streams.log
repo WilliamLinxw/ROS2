@@ -1,0 +1,27 @@
+[0.013s] Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub -- -j4 -l4
+[0.065s] [35m[1mScanning dependencies of target talker[0m
+[0.087s] [ 50%] Built target listener
+[0.092s] [ 75%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[1.004s] [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalPublisher::timer_callback()[m[K’:
+[1.005s] [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:29:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ was not declared in this scope
+[1.005s]        [01;31m[Kvector[m[K<float>obj;
+[1.005s]        [01;31m[K^~~~~~[m[K
+[1.005s] [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:29:7:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+[1.005s] In file included from [01m[K/usr/include/c++/7/vector:64:0[m[K,
+[1.005s]                  from [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:5[m[K:
+[1.005s] [01m[K/usr/include/c++/7/bits/stl_vector.h:216:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector[m[K’
+[1.005s]      class [01;36m[Kvector[m[K : protected _Vector_base<_Tp, _Alloc>
+[1.005s]            [01;36m[K^~~~~~[m[K
+[1.005s] [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:29:14:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+[1.006s]        vector<[01;31m[Kfloat[m[K>obj;
+[1.006s]               [01;31m[K^~~~~[m[K
+[1.006s] [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:31:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kobj[m[K’ was not declared in this scope
+[1.006s]        message.data = [01;31m[Kobj[m[K.push_back(count_++);
+[1.006s]                       [01;31m[K^~~[m[K
+[1.397s] make[2]: *** [CMakeFiles/talker.dir/src/publisher_member_function.cpp.o] Error 1
+[1.397s] CMakeFiles/talker.dir/build.make:62: recipe for target 'CMakeFiles/talker.dir/src/publisher_member_function.cpp.o' failed
+[1.397s] CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/talker.dir/all' failed
+[1.397s] make[1]: *** [CMakeFiles/talker.dir/all] Error 2
+[1.398s] make: *** [all] Error 2
+[1.398s] Makefile:140: recipe for target 'all' failed
+[1.401s] Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub -- -j4 -l4

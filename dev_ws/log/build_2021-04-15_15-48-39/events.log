@@ -1,0 +1,64 @@
+[0.000000] (-) TimerEvent: {}
+[0.000326] (-) JobUnselected: {'identifier': 'my_package'}
+[0.001176] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.001231] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.001316] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict()}
+[0.001393] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[0.014198] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[0.014712] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'build'}
+[0.015845] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub', '--', '-j4', '-l4'], 'cwd': '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'caesar'), ('LC_TIME', 'zh_CN.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('OSPL_INFOFILE', '<stdout>'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '2298'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/usr/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OSPL_URI', 'file:///opt/ros/dashing/share/opensplice_cmake_module/config/ros_ospl.xml'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/caesar'), ('OLDPWD', '/home/caesar/Desktop/ROS2'), ('DESKTOP_SESSION', 'ubuntu'), ('OSPL_VERBOSITY', '2'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('OSPL_TMPL_PATH', '/usr/etc/opensplice/idlpp'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/caesar/ros2_install'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'caesar'), ('GTK_IM_MODULE', 'fcitx'), ('_', '/usr/bin/colcon'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('ROS_VERSION', '2'), ('USERNAME', 'caesar'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('OSPL_ERRORFILE', '<stderr>'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/dashing/bin:/home/caesar/.local/share/umake/bin:/home/caesar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/HP:@/tmp/.ICE-unix/2194,unix/HP:/tmp/.ICE-unix/2194'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ff03690e_c010_450d_94be_1912f582997e'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('OSPL_HOME', '/usr'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=fcitx'), ('GNOME_TERMINAL_SERVICE', ':1.575'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'zh_CN.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'fcitx'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[0.067870] (cpp_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target listener\x1b[0m\n'}
+[0.086891] (cpp_pubsub) StdoutLine: {'line': b'[ 50%] Built target talker\n'}
+[0.096280] (cpp_pubsub) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o\x1b[0m\n'}
+[0.098793] (-) TimerEvent: {}
+[0.199201] (-) TimerEvent: {}
+[0.299557] (-) TimerEvent: {}
+[0.399867] (-) TimerEvent: {}
+[0.500240] (-) TimerEvent: {}
+[0.600603] (-) TimerEvent: {}
+[0.700947] (-) TimerEvent: {}
+[0.801299] (-) TimerEvent: {}
+[0.901671] (-) TimerEvent: {}
+[1.002024] (-) TimerEvent: {}
+[1.039907] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/client.hpp:39:0\x1b[m\x1b[K,\n'}
+[1.040107] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[1.040196] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.040274] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[1.040354] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.040429] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[1.040503] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/executors/multi_threaded_executor.hpp:24\x1b[m\x1b[K,\n'}
+[1.040582] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.040655] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/rclcpp.hpp:144\x1b[m\x1b[K,\n'}
+[1.040727] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:4\x1b[m\x1b[K:\n'}
+[1.040801] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.040878] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:22:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing _data_type = class std::vector<double> {aka class std::vector<double>}\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kc_str\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.040962] (cpp_pubsub) StderrLine: {'line': b'       RCLCPP_INFO(this->get_logger(), "I heard: \'%s\'", msg->data.\x1b[01;31m\x1b[Kc\x1b[m\x1b[K_str());\n'}
+[1.041037] (cpp_pubsub) StderrLine: {'line': b'                                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.041110] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/rcutils/logging_macros.h:72:64:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[KRCUTILS_LOG_COND_NAMED\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.041187] (cpp_pubsub) StderrLine: {'line': b'       rcutils_log(&__rcutils_logging_location, severity, name, \x1b[01;36m\x1b[K__VA_ARGS__\x1b[m\x1b[K); \\\n'}
+[1.041265] (cpp_pubsub) StderrLine: {'line': b'                                                                \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.041424] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/logging.hpp:218:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRCUTILS_LOG_INFO_NAMED\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.041501] (cpp_pubsub) StderrLine: {'line': b'     \x1b[01;36m\x1b[KRCUTILS_LOG_INFO_NAMED\x1b[m\x1b[K( \\\n'}
+[1.041573] (cpp_pubsub) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.041646] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/logging.hpp:221:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRCLCPP_ALL_BUT_FIRST_ARGS\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.041719] (cpp_pubsub) StderrLine: {'line': b'         \x1b[01;36m\x1b[KRCLCPP_ALL_BUT_FIRST_ARGS\x1b[m\x1b[K(__VA_ARGS__,"")); \\\n'}
+[1.041790] (cpp_pubsub) StderrLine: {'line': b'         \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.041862] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:22:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KRCLCPP_INFO\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.041938] (cpp_pubsub) StderrLine: {'line': b'       \x1b[01;36m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "I heard: \'%s\'", msg->data.c_str());\n'}
+[1.042010] (cpp_pubsub) StderrLine: {'line': b'       \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.102167] (-) TimerEvent: {}
+[1.202481] (-) TimerEvent: {}
+[1.302828] (-) TimerEvent: {}
+[1.403210] (-) TimerEvent: {}
+[1.503548] (-) TimerEvent: {}
+[1.603862] (-) TimerEvent: {}
+[1.664356] (cpp_pubsub) StderrLine: {'line': b'make[2]: *** [CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1\n'}
+[1.664704] (cpp_pubsub) StderrLine: {'line': b'make[1]: *** [CMakeFiles/listener.dir/all] Error 2\n'}
+[1.664853] (cpp_pubsub) StdoutLine: {'line': b"CMakeFiles/listener.dir/build.make:62: recipe for target 'CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o' failed\n"}
+[1.664968] (cpp_pubsub) StdoutLine: {'line': b"CMakeFiles/Makefile2:136: recipe for target 'CMakeFiles/listener.dir/all' failed\n"}
+[1.665140] (cpp_pubsub) StderrLine: {'line': b'make: *** [all] Error 2\n'}
+[1.665227] (cpp_pubsub) StdoutLine: {'line': b"Makefile:140: recipe for target 'all' failed\n"}
+[1.666641] (cpp_pubsub) CommandEnded: {'returncode': 2}
+[1.704180] (-) TimerEvent: {}
+[1.711836] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 2}
+[1.722702] (-) EventReactorShutdown: {}

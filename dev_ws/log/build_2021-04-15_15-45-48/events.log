@@ -1,0 +1,246 @@
+[0.000000] (-) TimerEvent: {}
+[0.001185] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict()}
+[0.001270] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.002104] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict()}
+[0.002261] (turtlesim) JobQueued: {'identifier': 'turtlesim', 'dependencies': OrderedDict()}
+[0.002430] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[0.011964] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.022073] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[0.031796] (turtlesim) JobStarted: {'identifier': 'turtlesim'}
+[0.051670] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[0.053134] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'build'}
+[0.053186] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub', '--', '-j4', '-l4'], 'cwd': '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'caesar'), ('LC_TIME', 'zh_CN.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('OSPL_INFOFILE', '<stdout>'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '2298'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/usr/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OSPL_URI', 'file:///opt/ros/dashing/share/opensplice_cmake_module/config/ros_ospl.xml'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/caesar'), ('OLDPWD', '/home/caesar/Desktop/ROS2'), ('DESKTOP_SESSION', 'ubuntu'), ('OSPL_VERBOSITY', '2'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('OSPL_TMPL_PATH', '/usr/etc/opensplice/idlpp'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/caesar/ros2_install'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'caesar'), ('GTK_IM_MODULE', 'fcitx'), ('_', '/usr/bin/colcon'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('ROS_VERSION', '2'), ('USERNAME', 'caesar'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('OSPL_ERRORFILE', '<stderr>'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/dashing/bin:/home/caesar/.local/share/umake/bin:/home/caesar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/HP:@/tmp/.ICE-unix/2194,unix/HP:/tmp/.ICE-unix/2194'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ff03690e_c010_450d_94be_1912f582997e'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('OSPL_HOME', '/usr'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=fcitx'), ('GNOME_TERMINAL_SERVICE', ':1.575'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'zh_CN.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'fcitx'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[0.099801] (-) TimerEvent: {}
+[0.200340] (-) TimerEvent: {}
+[0.300804] (-) TimerEvent: {}
+[0.401264] (-) TimerEvent: {}
+[0.501824] (-) TimerEvent: {}
+[0.602567] (-) TimerEvent: {}
+[0.603387] (turtlesim) JobProgress: {'identifier': 'turtlesim', 'progress': 'cmake'}
+[0.604975] (turtlesim) Command: {'cmd': ['/usr/bin/cmake', '/home/caesar/Desktop/ROS2/dev_ws/src/ros_tutorials/turtlesim', '-DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/dev_ws/install/turtlesim'], 'cwd': '/home/caesar/Desktop/ROS2/dev_ws/build/turtlesim', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'caesar'), ('LC_TIME', 'zh_CN.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('OSPL_INFOFILE', '<stdout>'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '2298'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/usr/lib:/opt/ros/dashing/lib'), ('SHLVL', '1'), ('OSPL_URI', 'file:///opt/ros/dashing/share/opensplice_cmake_module/config/ros_ospl.xml'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/caesar'), ('OLDPWD', '/home/caesar/Desktop/ROS2'), ('DESKTOP_SESSION', 'ubuntu'), ('OSPL_VERBOSITY', '2'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('OSPL_TMPL_PATH', '/usr/etc/opensplice/idlpp'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/caesar/ros2_install'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'caesar'), ('GTK_IM_MODULE', 'fcitx'), ('_', '/usr/bin/colcon'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('ROS_VERSION', '2'), ('USERNAME', 'caesar'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('OSPL_ERRORFILE', '<stderr>'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/dashing/bin:/home/caesar/.local/share/umake/bin:/home/caesar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/HP:@/tmp/.ICE-unix/2194,unix/HP:/tmp/.ICE-unix/2194'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ff03690e_c010_450d_94be_1912f582997e'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('OSPL_HOME', '/usr'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=fcitx'), ('GNOME_TERMINAL_SERVICE', ':1.575'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'zh_CN.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'fcitx'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/caesar/Desktop/ROS2/dev_ws/build/turtlesim'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[0.608114] (cpp_pubsub) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target listener\x1b[0m\n'}
+[0.608594] (cpp_pubsub) StdoutLine: {'line': b'[ 50%] Built target talker\n'}
+[0.608822] (cpp_pubsub) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o\x1b[0m\n'}
+[0.611455] (my_package) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/my_package', 'build', '--build-base', '/home/caesar/Desktop/ROS2/dev_ws/build/my_package/build', 'install', '--prefix', '/home/caesar/Desktop/ROS2/dev_ws/install/my_package', '--record', '/home/caesar/Desktop/ROS2/dev_ws/build/my_package/install.log', '--single-version-externally-managed'], 'cwd': '/home/caesar/Desktop/ROS2/dev_ws/src/my_package', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'caesar', 'LC_TIME': 'zh_CN.UTF-8', 'TEXTDOMAIN': 'im-config', 'OSPL_INFOFILE': '<stdout>', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '2298', 'XDG_SESSION_TYPE': 'x11', 'LD_LIBRARY_PATH': '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/usr/lib:/opt/ros/dashing/lib', 'SHLVL': '1', 'OSPL_URI': 'file:///opt/ros/dashing/share/opensplice_cmake_module/config/ros_ospl.xml', 'QT4_IM_MODULE': 'fcitx', 'HOME': '/home/caesar', 'OLDPWD': '/home/caesar/Desktop/ROS2', 'DESKTOP_SESSION': 'ubuntu', 'OSPL_VERBOSITY': '2', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'zh_CN.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'OSPL_TMPL_PATH': '/usr/etc/opensplice/idlpp', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/caesar/ros2_install', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '2', 'ROS_DISTRO': 'dashing', 'LOGNAME': 'caesar', 'GTK_IM_MODULE': 'fcitx', '_': '/usr/bin/colcon', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'ROS_VERSION': '2', 'USERNAME': 'caesar', 'XDG_SESSION_ID': '2', 'TERM': 'xterm-256color', 'OSPL_ERRORFILE': '<stderr>', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/dashing/bin:/home/caesar/.local/share/umake/bin:/home/caesar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/HP:@/tmp/.ICE-unix/2194,unix/HP:/tmp/.ICE-unix/2194', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ff03690e_c010_450d_94be_1912f582997e', 'LC_ADDRESS': 'zh_CN.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'OSPL_HOME': '/usr', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=fcitx', 'GNOME_TERMINAL_SERVICE': ':1.575', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'AMENT_PREFIX_PATH': '/opt/ros/dashing', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'LC_NAME': 'zh_CN.UTF-8', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'TEXTDOMAINDIR': '/usr/share/locale/', 'GJS_DEBUG_OUTPUT': 'stderr', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'XDG_VTNR': '2', 'QT_IM_MODULE': 'fcitx', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/caesar/Desktop/ROS2/dev_ws/build/my_package', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'LC_NUMERIC': 'zh_CN.UTF-8', 'PYTHONPATH': '/home/caesar/Desktop/ROS2/dev_ws/install/my_package/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'VTE_VERSION': '5202'}, 'shell': False}
+[0.617769] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/build', 'install', '--prefix', '/home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub', '--record', '/home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/install.log', '--single-version-externally-managed'], 'cwd': '/home/caesar/Desktop/ROS2/dev_ws/src/py_pubsub', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'caesar', 'LC_TIME': 'zh_CN.UTF-8', 'TEXTDOMAIN': 'im-config', 'OSPL_INFOFILE': '<stdout>', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '2298', 'XDG_SESSION_TYPE': 'x11', 'LD_LIBRARY_PATH': '/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/usr/lib:/opt/ros/dashing/lib', 'SHLVL': '1', 'OSPL_URI': 'file:///opt/ros/dashing/share/opensplice_cmake_module/config/ros_ospl.xml', 'QT4_IM_MODULE': 'fcitx', 'HOME': '/home/caesar', 'OLDPWD': '/home/caesar/Desktop/ROS2', 'DESKTOP_SESSION': 'ubuntu', 'OSPL_VERBOSITY': '2', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'zh_CN.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'OSPL_TMPL_PATH': '/usr/etc/opensplice/idlpp', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/home/caesar/ros2_install', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'IM_CONFIG_PHASE': '2', 'ROS_DISTRO': 'dashing', 'LOGNAME': 'caesar', 'GTK_IM_MODULE': 'fcitx', '_': '/usr/bin/colcon', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'ROS_VERSION': '2', 'USERNAME': 'caesar', 'XDG_SESSION_ID': '2', 'TERM': 'xterm-256color', 'OSPL_ERRORFILE': '<stderr>', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/dashing/bin:/home/caesar/.local/share/umake/bin:/home/caesar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/HP:@/tmp/.ICE-unix/2194,unix/HP:/tmp/.ICE-unix/2194', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ff03690e_c010_450d_94be_1912f582997e', 'LC_ADDRESS': 'zh_CN.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'OSPL_HOME': '/usr', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=fcitx', 'GNOME_TERMINAL_SERVICE': ':1.575', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'AMENT_PREFIX_PATH': '/opt/ros/dashing', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'LC_NAME': 'zh_CN.UTF-8', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'TEXTDOMAINDIR': '/usr/share/locale/', 'GJS_DEBUG_OUTPUT': 'stderr', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'XDG_VTNR': '2', 'QT_IM_MODULE': 'fcitx', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'LC_NUMERIC': 'zh_CN.UTF-8', 'PYTHONPATH': '/home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'VTE_VERSION': '5202'}, 'shell': False}
+[0.691642] (turtlesim) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[0.702650] (-) TimerEvent: {}
+[0.754787] (turtlesim) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[0.758954] (turtlesim) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.802750] (-) TimerEvent: {}
+[0.844044] (turtlesim) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.844990] (turtlesim) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.902878] (-) TimerEvent: {}
+[0.933013] (turtlesim) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.938236] (turtlesim) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.002964] (-) TimerEvent: {}
+[1.024140] (my_package) StdoutLine: {'line': b'running egg_info\n'}
+[1.024358] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[1.024837] (my_package) StdoutLine: {'line': b'creating ../../build/my_package/my_package.egg-info\n'}
+[1.025133] (my_package) StdoutLine: {'line': b'writing ../../build/my_package/my_package.egg-info/PKG-INFO\n'}
+[1.025420] (my_package) StdoutLine: {'line': b'writing dependency_links to ../../build/my_package/my_package.egg-info/dependency_links.txt\n'}
+[1.025657] (my_package) StdoutLine: {'line': b'writing entry points to ../../build/my_package/my_package.egg-info/entry_points.txt\n'}
+[1.025834] (my_package) StdoutLine: {'line': b'writing requirements to ../../build/my_package/my_package.egg-info/requires.txt\n'}
+[1.025951] (my_package) StdoutLine: {'line': b'writing top-level names to ../../build/my_package/my_package.egg-info/top_level.txt\n'}
+[1.026092] (my_package) StdoutLine: {'line': b"writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.026424] (py_pubsub) StdoutLine: {'line': b'creating ../../build/py_pubsub/py_pubsub.egg-info\n'}
+[1.026757] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[1.027230] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[1.027562] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[1.027894] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[1.028163] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[1.028540] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[1.103058] (-) TimerEvent: {}
+[1.150772] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[1.151180] (my_package) StdoutLine: {'line': b"reading manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.152551] (my_package) StdoutLine: {'line': b"writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.152736] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[1.152997] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[1.153199] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[1.153387] (py_pubsub) StdoutLine: {'line': b'creating /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/build\n'}
+[1.153481] (my_package) StdoutLine: {'line': b'running build\n'}
+[1.153581] (my_package) StdoutLine: {'line': b'running build_py\n'}
+[1.153663] (my_package) StdoutLine: {'line': b'creating /home/caesar/Desktop/ROS2/dev_ws/build/my_package/build\n'}
+[1.153743] (my_package) StdoutLine: {'line': b'creating /home/caesar/Desktop/ROS2/dev_ws/build/my_package/build/lib\n'}
+[1.153848] (py_pubsub) StdoutLine: {'line': b'creating /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/build/lib\n'}
+[1.153928] (my_package) StdoutLine: {'line': b'creating /home/caesar/Desktop/ROS2/dev_ws/build/my_package/build/lib/my_package\n'}
+[1.154007] (py_pubsub) StdoutLine: {'line': b'creating /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[1.154085] (my_package) StdoutLine: {'line': b'copying my_package/my_node.py -> /home/caesar/Desktop/ROS2/dev_ws/build/my_package/build/lib/my_package\n'}
+[1.154165] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/publisher_member_function.py -> /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[1.176197] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/__init__.py -> /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[1.176505] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/subscriber_member_function.py -> /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[1.185687] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.186094] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:22:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcout\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.186195] (cpp_pubsub) StderrLine: {'line': b'       \x1b[01;31m\x1b[Kcout\x1b[m\x1b[K << msg->data << endl;\n'}
+[1.186277] (cpp_pubsub) StderrLine: {'line': b'       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.186355] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:22:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternative:\n'}
+[1.186436] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/executor.hpp:22:0\x1b[m\x1b[K,\n'}
+[1.186513] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/executors/multi_threaded_executor.hpp:24\x1b[m\x1b[K,\n'}
+[1.186589] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.186664] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/rclcpp.hpp:144\x1b[m\x1b[K,\n'}
+[1.186740] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:3\x1b[m\x1b[K:\n'}
+[1.186833] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/7/iostream:61:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::cout\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.186922] (cpp_pubsub) StderrLine: {'line': b'   extern ostream \x1b[01;36m\x1b[Kcout\x1b[m\x1b[K;  /// Linked to standard output\n'}
+[1.186997] (cpp_pubsub) StderrLine: {'line': b'                  \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.187073] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:22:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kendl\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.187159] (cpp_pubsub) StderrLine: {'line': b'       cout << msg->data << \x1b[01;31m\x1b[Kendl\x1b[m\x1b[K;\n'}
+[1.187234] (cpp_pubsub) StderrLine: {'line': b'                            \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.187309] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:22:28:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternative:\n'}
+[1.187385] (cpp_pubsub) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/7/iostream:39:0\x1b[m\x1b[K,\n'}
+[1.187460] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/executor.hpp:22\x1b[m\x1b[K,\n'}
+[1.187571] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/executors/multi_threaded_executor.hpp:24\x1b[m\x1b[K,\n'}
+[1.187661] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.187734] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/dashing/include/rclcpp/rclcpp.hpp:144\x1b[m\x1b[K,\n'}
+[1.187809] (cpp_pubsub) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:3\x1b[m\x1b[K:\n'}
+[1.187880] (cpp_pubsub) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/7/ostream:590:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::endl\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.187969] (cpp_pubsub) StderrLine: {'line': b'     \x1b[01;36m\x1b[Kendl\x1b[m\x1b[K(basic_ostream<_CharT, _Traits>& __os)\n'}
+[1.188042] (cpp_pubsub) StderrLine: {'line': b'     \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.192738] (turtlesim) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.193493] (my_package) StdoutLine: {'line': b'copying my_package/__init__.py -> /home/caesar/Desktop/ROS2/dev_ws/build/my_package/build/lib/my_package\n'}
+[1.193709] (my_package) StdoutLine: {'line': b'running install\n'}
+[1.194241] (my_package) StdoutLine: {'line': b'running install_lib\n'}
+[1.195197] (turtlesim) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.202900] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[1.203067] (-) TimerEvent: {}
+[1.203220] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[1.214841] (my_package) StdoutLine: {'line': b'creating /home/caesar/Desktop/ROS2/dev_ws/install/my_package/lib/python3.6/site-packages/my_package\n'}
+[1.215096] (my_package) StdoutLine: {'line': b'copying /home/caesar/Desktop/ROS2/dev_ws/build/my_package/build/lib/my_package/my_node.py -> /home/caesar/Desktop/ROS2/dev_ws/install/my_package/lib/python3.6/site-packages/my_package\n'}
+[1.215207] (my_package) StdoutLine: {'line': b'copying /home/caesar/Desktop/ROS2/dev_ws/build/my_package/build/lib/my_package/__init__.py -> /home/caesar/Desktop/ROS2/dev_ws/install/my_package/lib/python3.6/site-packages/my_package\n'}
+[1.215300] (my_package) StdoutLine: {'line': b'byte-compiling /home/caesar/Desktop/ROS2/dev_ws/install/my_package/lib/python3.6/site-packages/my_package/my_node.py to my_node.cpython-36.pyc\n'}
+[1.215386] (py_pubsub) StdoutLine: {'line': b'creating /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub\n'}
+[1.215477] (py_pubsub) StdoutLine: {'line': b'copying /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub\n'}
+[1.215675] (py_pubsub) StdoutLine: {'line': b'copying /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub\n'}
+[1.215782] (py_pubsub) StdoutLine: {'line': b'copying /home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub\n'}
+[1.215875] (my_package) StdoutLine: {'line': b'byte-compiling /home/caesar/Desktop/ROS2/dev_ws/install/my_package/lib/python3.6/site-packages/my_package/__init__.py to __init__.cpython-36.pyc\n'}
+[1.215961] (my_package) StdoutLine: {'line': b'running install_data\n'}
+[1.216134] (my_package) StdoutLine: {'line': b'creating /home/caesar/Desktop/ROS2/dev_ws/install/my_package/share/ament_index\n'}
+[1.216427] (my_package) StdoutLine: {'line': b'creating /home/caesar/Desktop/ROS2/dev_ws/install/my_package/share/ament_index/resource_index\n'}
+[1.216607] (my_package) StdoutLine: {'line': b'creating /home/caesar/Desktop/ROS2/dev_ws/install/my_package/share/ament_index/resource_index/packages\n'}
+[1.216764] (my_package) StdoutLine: {'line': b'copying resource/my_package -> /home/caesar/Desktop/ROS2/dev_ws/install/my_package/share/ament_index/resource_index/packages\n'}
+[1.216861] (my_package) StdoutLine: {'line': b'copying package.xml -> /home/caesar/Desktop/ROS2/dev_ws/install/my_package/share/my_package\n'}
+[1.216947] (my_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.217679] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-36.pyc\n'}
+[1.218912] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub/__init__.py to __init__.cpython-36.pyc\n'}
+[1.219166] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-36.pyc\n'}
+[1.219272] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[1.219401] (py_pubsub) StdoutLine: {'line': b'creating /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/share/ament_index\n'}
+[1.219545] (py_pubsub) StdoutLine: {'line': b'creating /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/share/ament_index/resource_index\n'}
+[1.219634] (py_pubsub) StdoutLine: {'line': b'creating /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[1.219713] (py_pubsub) StdoutLine: {'line': b'copying resource/py_pubsub -> /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[1.219792] (py_pubsub) StdoutLine: {'line': b'copying package.xml -> /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/share/py_pubsub\n'}
+[1.219871] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.221412] (my_package) StdoutLine: {'line': b'Copying ../../build/my_package/my_package.egg-info to /home/caesar/Desktop/ROS2/dev_ws/install/my_package/lib/python3.6/site-packages/my_package-0.0.0-py3.6.egg-info\n'}
+[1.222446] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/python3.6/site-packages/py_pubsub-0.0.0-py3.6.egg-info\n'}
+[1.222733] (my_package) StdoutLine: {'line': b'running install_scripts\n'}
+[1.223479] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[1.276402] (my_package) StdoutLine: {'line': b'Installing my_node script to /home/caesar/Desktop/ROS2/dev_ws/install/my_package/lib/my_package\n'}
+[1.276587] (py_pubsub) StdoutLine: {'line': b'Installing listener script to /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/py_pubsub\n'}
+[1.276816] (my_package) StdoutLine: {'line': b"writing list of installed files to '/home/caesar/Desktop/ROS2/dev_ws/build/my_package/install.log'\n"}
+[1.277107] (py_pubsub) StdoutLine: {'line': b'Installing talker script to /home/caesar/Desktop/ROS2/dev_ws/install/py_pubsub/lib/py_pubsub\n'}
+[1.277686] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/caesar/Desktop/ROS2/dev_ws/build/py_pubsub/install.log'\n"}
+[1.303220] (-) TimerEvent: {}
+[1.305605] (turtlesim) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.306928] (turtlesim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.317400] (py_pubsub) CommandEnded: {'returncode': 0}
+[1.332355] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[1.334603] (my_package) CommandEnded: {'returncode': 0}
+[1.342346] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[1.403315] (turtlesim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.403539] (-) TimerEvent: {}
+[1.408545] (turtlesim) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.503766] (-) TimerEvent: {}
+[1.604090] (-) TimerEvent: {}
+[1.704536] (-) TimerEvent: {}
+[1.787532] (turtlesim) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.789895] (turtlesim) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.5 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[1.804656] (-) TimerEvent: {}
+[1.824071] (turtlesim) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") \n'}
+[1.824345] (turtlesim) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.885040] (cpp_pubsub) StderrLine: {'line': b'make[2]: *** [CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1\n'}
+[1.885412] (cpp_pubsub) StdoutLine: {'line': b"CMakeFiles/listener.dir/build.make:62: recipe for target 'CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o' failed\n"}
+[1.885637] (cpp_pubsub) StdoutLine: {'line': b"CMakeFiles/Makefile2:136: recipe for target 'CMakeFiles/listener.dir/all' failed\n"}
+[1.885917] (cpp_pubsub) StderrLine: {'line': b'make[1]: *** [CMakeFiles/listener.dir/all] Error 2\n'}
+[1.886026] (cpp_pubsub) StdoutLine: {'line': b"Makefile:140: recipe for target 'all' failed\n"}
+[1.886119] (cpp_pubsub) StderrLine: {'line': b'make: *** [all] Error 2\n'}
+[1.887328] (cpp_pubsub) CommandEnded: {'returncode': 2}
+[1.904852] (-) TimerEvent: {}
+[1.932829] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 2}
+[2.004964] (-) TimerEvent: {}
+[2.075313] (turtlesim) StdoutLine: {'line': b'-- Found ament_index_cpp: 0.7.2 (/opt/ros/dashing/share/ament_index_cpp/cmake)\n'}
+[2.100027] (turtlesim) StdoutLine: {'line': b'-- Found geometry_msgs: 0.7.0 (/opt/ros/dashing/share/geometry_msgs/cmake)\n'}
+[2.105147] (-) TimerEvent: {}
+[2.144005] (turtlesim) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.9 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[2.205293] (-) TimerEvent: {}
+[2.285906] (turtlesim) StdoutLine: {'line': b'-- Found rclcpp: 0.7.14 (/opt/ros/dashing/share/rclcpp/cmake)\n'}
+[2.304197] (turtlesim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[2.305397] (-) TimerEvent: {}
+[2.305773] (turtlesim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.306697] (turtlesim) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.382558] (turtlesim) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.382962] (turtlesim) StdoutLine: {'line': b'-- Looking for pthread_create\n'}
+[2.405532] (-) TimerEvent: {}
+[2.460195] (turtlesim) StdoutLine: {'line': b'-- Looking for pthread_create - not found\n'}
+[2.460515] (turtlesim) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[2.505640] (-) TimerEvent: {}
+[2.523437] (turtlesim) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[2.523838] (turtlesim) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[2.598905] (turtlesim) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[2.599990] (turtlesim) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.605733] (-) TimerEvent: {}
+[2.642738] (turtlesim) StdoutLine: {'line': b'-- Found rclcpp_action: 0.7.14 (/opt/ros/dashing/share/rclcpp_action/cmake)\n'}
+[2.705890] (-) TimerEvent: {}
+[2.806286] (-) TimerEvent: {}
+[2.860370] (turtlesim) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)\n'}
+[2.906503] (-) TimerEvent: {}
+[3.007027] (-) TimerEvent: {}
+[3.107591] (-) TimerEvent: {}
+[3.109518] (turtlesim) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") \n'}
+[3.153180] (turtlesim) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/dashing/include  \n'}
+[3.207678] (-) TimerEvent: {}
+[3.280581] (turtlesim) StdoutLine: {'line': b'-- Found PrismTech OpenSplice: /usr/share/opensplice/cmake\n'}
+[3.307846] (-) TimerEvent: {}
+[3.408338] (-) TimerEvent: {}
+[3.409027] (turtlesim) StdoutLine: {'line': b'-- Found std_srvs: 0.7.0 (/opt/ros/dashing/share/std_srvs/cmake)\n'}
+[3.500408] (turtlesim) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") \n'}
+[3.508451] (-) TimerEvent: {}
+[3.608768] (-) TimerEvent: {}
+[3.709059] (-) TimerEvent: {}
+[3.809418] (-) TimerEvent: {}
+[3.848519] (turtlesim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_opensplice_c\n'}
+[3.882181] (turtlesim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp;rosidl_typesupport_opensplice_cpp\n'}
+[3.909634] (-) TimerEvent: {}
+[4.010173] (-) TimerEvent: {}
+[4.110517] (-) TimerEvent: {}
+[4.164371] (turtlesim) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") \n'}
+[4.166201] (turtlesim) StdoutLine: {'line': b'-- Found python_cmake_module: 0.7.10 (/opt/ros/dashing/share/python_cmake_module/cmake)\n'}
+[4.210681] (-) TimerEvent: {}
+[4.239742] (turtlesim) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.9", minimum required is "3.5") \n'}
+[4.240116] (turtlesim) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.240268] (turtlesim) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m\n'}
+[4.240398] (turtlesim) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so\n'}
+[4.281971] (turtlesim) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.310860] (-) TimerEvent: {}
+[4.411226] (-) TimerEvent: {}
+[4.511610] (-) TimerEvent: {}
+[4.611940] (-) TimerEvent: {}
+[4.712336] (-) TimerEvent: {}
+[4.812720] (-) TimerEvent: {}
+[4.913366] (-) TimerEvent: {}
+[4.918330] (turtlesim) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.013618] (-) TimerEvent: {}
+[5.114317] (-) TimerEvent: {}
+[5.214956] (-) TimerEvent: {}
+[5.315596] (-) TimerEvent: {}
+[5.416222] (-) TimerEvent: {}
+[5.516793] (-) TimerEvent: {}
+[5.617391] (-) TimerEvent: {}
+[5.717899] (-) TimerEvent: {}
+[5.818198] (-) TimerEvent: {}
+[5.918574] (-) TimerEvent: {}
+[6.019184] (-) TimerEvent: {}
+[6.119792] (-) TimerEvent: {}
+[6.220340] (-) TimerEvent: {}
+[6.299076] (turtlesim) StdoutLine: {'line': b'-- Generating done\n'}
+[6.303245] (turtlesim) StdoutLine: {'line': b'-- Build files have been written to: /home/caesar/Desktop/ROS2/dev_ws/build/turtlesim\n'}
+[6.309701] (turtlesim) JobEnded: {'identifier': 'turtlesim', 'rc': 'SIGINT'}
+[6.321167] (-) EventReactorShutdown: {}

@@ -1,0 +1,4 @@
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:23:25:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+       for (int i = 0; [01;35m[Ki < msg->data.size()[m[K; i++){
+                       [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K

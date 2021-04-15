@@ -1,0 +1,59 @@
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalPublisher::timer_callback()[m[K’:
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:29:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ was not declared in this scope
+       [01;31m[Kvector[m[K<int>obj;
+       [01;31m[K^~~~~~[m[K
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:29:7:[m[K [01;36m[Knote: [m[Ksuggested alternative:
+In file included from [01m[K/usr/include/c++/7/vector:64:0[m[K,
+                 from [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:5[m[K:
+[01m[K/usr/include/c++/7/bits/stl_vector.h:216:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector[m[K’
+     class [01;36m[Kvector[m[K : protected _Vector_base<_Tp, _Alloc>
+           [01;36m[K^~~~~~[m[K
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:29:14:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+       vector<[01;31m[Kint[m[K>obj;
+              [01;31m[K^~~[m[K
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:31:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kobj[m[K’ was not declared in this scope
+       message.data = [01;31m[Kobj[m[K.push_back(count_++);
+                      [01;31m[K^~~[m[K
+In file included from [01m[K/opt/ros/dashing/include/rclcpp/client.hpp:39:0[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/executors/multi_threaded_executor.hpp:24[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/rclcpp.hpp:144[m[K,
+                 from [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:7[m[K:
+[01m[K/opt/ros/dashing/include/rclcpp/logging.hpp:220:61:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kget_c_string(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::_data_type&)[m[K’
+       rclcpp::get_c_string(RCLCPP_FIRST_ARG(__VA_ARGS__, "")[01;31m[K)[m[K, \
+                                                             [01;31m[K^[m[K
+[01m[K/opt/ros/dashing/include/rcutils/logging_macros.h:72:64:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KRCUTILS_LOG_COND_NAMED[m[K’
+       rcutils_log(&__rcutils_logging_location, severity, name, [01;36m[K__VA_ARGS__[m[K); \
+                                                                [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/dashing/include/rclcpp/logging.hpp:218:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KRCUTILS_LOG_INFO_NAMED[m[K’
+     [01;36m[KRCUTILS_LOG_INFO_NAMED[m[K( \
+     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:32:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KRCLCPP_INFO[m[K’
+       [01;36m[KRCLCPP_INFO[m[K(this->get_logger(), message.data);
+       [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/dashing/include/rclcpp/client.hpp:35:0[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/executors/multi_threaded_executor.hpp:24[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/dashing/include/rclcpp/rclcpp.hpp:144[m[K,
+                 from [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/publisher_member_function.cpp:7[m[K:
+[01m[K/opt/ros/dashing/include/rclcpp/utilities.hpp:294:1:[m[K [01;36m[Knote: [m[Kcandidate: const char* rclcpp::get_c_string(const char*)
+ [01;36m[Kget_c_string[m[K(const char * string_in);
+ [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/dashing/include/rclcpp/utilities.hpp:294:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >::_data_type {aka std::vector<double>}[m[K’ to ‘[01m[Kconst char*[m[K’
+[01m[K/opt/ros/dashing/include/rclcpp/utilities.hpp:303:1:[m[K [01;36m[Knote: [m[Kcandidate: const char* rclcpp::get_c_string(const string&)
+ [01;36m[Kget_c_string[m[K(const std::string & string_in);
+ [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/dashing/include/rclcpp/utilities.hpp:303:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >::_data_type {aka std::vector<double>}[m[K’ to ‘[01m[Kconst string& {aka const std::__cxx11::basic_string<char>&}[m[K’
+make[2]: *** [CMakeFiles/talker.dir/src/publisher_member_function.cpp.o] Error 1
+make[1]: *** [CMakeFiles/talker.dir/all] Error 2
+make: *** [all] Error 2

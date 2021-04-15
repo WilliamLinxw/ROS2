@@ -1,0 +1,6 @@
+Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub
+Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub
+Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub -- -j4 -l4
+Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub -- -j4 -l4
+Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub --target install -- -j4 -l4
+Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub --target install -- -j4 -l4

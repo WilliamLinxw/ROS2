@@ -1,0 +1,52 @@
+[0.575s] Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /home/caesar/Desktop/ROS2/dev_ws/src/ros_tutorials/turtlesim -DCMAKE_INSTALL_PREFIX=/home/caesar/Desktop/ROS2/dev_ws/install/turtlesim
+[0.660s] -- The C compiler identification is GNU 7.5.0
+[0.723s] -- The CXX compiler identification is GNU 7.5.0
+[0.727s] -- Check for working C compiler: /usr/bin/cc
+[0.812s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.813s] -- Detecting C compiler ABI info
+[0.901s] -- Detecting C compiler ABI info - done
+[0.907s] -- Detecting C compile features
+[1.161s] -- Detecting C compile features - done
+[1.163s] -- Check for working CXX compiler: /usr/bin/c++
+[1.274s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.275s] -- Detecting CXX compiler ABI info
+[1.372s] -- Detecting CXX compiler ABI info - done
+[1.377s] -- Detecting CXX compile features
+[1.756s] -- Detecting CXX compile features - done
+[1.758s] -- Found ament_cmake: 0.7.5 (/opt/ros/dashing/share/ament_cmake/cmake)
+[1.792s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[1.793s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.044s] -- Found ament_index_cpp: 0.7.2 (/opt/ros/dashing/share/ament_index_cpp/cmake)
+[2.068s] -- Found geometry_msgs: 0.7.0 (/opt/ros/dashing/share/geometry_msgs/cmake)
+[2.112s] -- Found rosidl_adapter: 0.7.9 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[2.254s] -- Found rclcpp: 0.7.14 (/opt/ros/dashing/share/rclcpp/cmake)
+[2.272s] -- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+[2.274s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.275s] -- Looking for pthread.h
+[2.351s] -- Looking for pthread.h - found
+[2.351s] -- Looking for pthread_create
+[2.429s] -- Looking for pthread_create - not found
+[2.429s] -- Looking for pthread_create in pthreads
+[2.492s] -- Looking for pthread_create in pthreads - not found
+[2.492s] -- Looking for pthread_create in pthread
+[2.567s] -- Looking for pthread_create in pthread - found
+[2.568s] -- Found Threads: TRUE  
+[2.611s] -- Found rclcpp_action: 0.7.14 (/opt/ros/dashing/share/rclcpp_action/cmake)
+[2.829s] -- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)
+[3.078s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1") 
+[3.121s] -- Found FastRTPS: /opt/ros/dashing/include  
+[3.249s] -- Found PrismTech OpenSplice: /usr/share/opensplice/cmake
+[3.377s] -- Found std_srvs: 0.7.0 (/opt/ros/dashing/share/std_srvs/cmake)
+[3.469s] -- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+[3.817s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_opensplice_c
+[3.850s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp;rosidl_typesupport_opensplice_cpp
+[4.133s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") 
+[4.134s] -- Found python_cmake_module: 0.7.10 (/opt/ros/dashing/share/python_cmake_module/cmake)
+[4.208s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.9", minimum required is "3.5") 
+[4.208s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.209s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m
+[4.209s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so
+[4.250s] -- Found PythonExtra: .so  
+[4.887s] -- Configuring done
+[6.267s] -- Generating done
+[6.272s] -- Build files have been written to: /home/caesar/Desktop/ROS2/dev_ws/build/turtlesim

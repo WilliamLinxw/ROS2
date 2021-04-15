@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_031db/fast"
+/usr/bin/make -f CMakeFiles/cmTC_031db.dir/build.make CMakeFiles/cmTC_031db.dir/build
+make[1]: Entering directory '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_031db.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_031db.dir/CheckSymbolExists.c.o   -c /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_031db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_031db.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_031db.dir/CheckSymbolExists.c.o  -o cmTC_031db 
+CMakeFiles/cmTC_031db.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_031db.dir/build.make:97: recipe for target 'cmTC_031db' failed
+make[1]: *** [cmTC_031db] Error 1
+make[1]: Leaving directory '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_031db/fast' failed
+make: *** [cmTC_031db/fast] Error 2
+
+File /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_95116/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95116.dir/build.make CMakeFiles/cmTC_95116.dir/build
+make[1]: Entering directory '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95116.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_95116.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_95116
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95116.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_95116.dir/CheckFunctionExists.c.o  -o cmTC_95116 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_95116.dir/build.make:97: recipe for target 'cmTC_95116' failed
+make[1]: *** [cmTC_95116] Error 1
+make[1]: Leaving directory '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_95116/fast' failed
+make: *** [cmTC_95116/fast] Error 2
+
+

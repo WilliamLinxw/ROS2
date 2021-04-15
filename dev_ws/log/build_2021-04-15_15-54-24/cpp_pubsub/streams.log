@@ -1,0 +1,27 @@
+[0.020s] Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub -- -j4 -l4
+[0.072s] [35m[1mScanning dependencies of target listener[0m
+[0.096s] [ 50%] Built target talker
+[0.100s] [ 75%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[2.696s] [100%] [32m[1mLinking CXX executable listener[0m
+[2.899s] [100%] Built target listener
+[2.915s] Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub -- -j4 -l4
+[2.963s] Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub --target install -- -j4 -l4
+[3.043s] [100%] Built target talker
+[3.044s] [100%] Built target listener
+[3.067s] [36mInstall the project...[0m
+[3.079s] -- Install configuration: ""
+[3.079s] -- Up-to-date: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/talker
+[3.080s] -- Installing: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener
+[3.081s] -- Set runtime path of "/home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/lib/cpp_pubsub/listener" to ""
+[3.081s] -- Up-to-date: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub
+[3.081s] -- Up-to-date: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub
+[3.081s] -- Up-to-date: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh
+[3.082s] -- Up-to-date: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh
+[3.082s] -- Up-to-date: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash
+[3.082s] -- Up-to-date: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh
+[3.082s] -- Up-to-date: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh
+[3.082s] -- Up-to-date: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub
+[3.082s] -- Up-to-date: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake
+[3.082s] -- Up-to-date: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake
+[3.082s] -- Up-to-date: /home/caesar/Desktop/ROS2/dev_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml
+[3.086s] Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub --target install -- -j4 -l4

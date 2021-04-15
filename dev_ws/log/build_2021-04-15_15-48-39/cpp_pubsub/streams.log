@@ -1,0 +1,37 @@
+[0.018s] Invoking command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub -- -j4 -l4
+[0.067s] [35m[1mScanning dependencies of target listener[0m
+[0.086s] [ 50%] Built target talker
+[0.095s] [ 75%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[1.039s] In file included from [01m[K/opt/ros/dashing/include/rclcpp/client.hpp:39:0[m[K,
+[1.039s]                  from [01m[K/opt/ros/dashing/include/rclcpp/callback_group.hpp:23[m[K,
+[1.039s]                  from [01m[K/opt/ros/dashing/include/rclcpp/any_executable.hpp:20[m[K,
+[1.039s]                  from [01m[K/opt/ros/dashing/include/rclcpp/memory_strategy.hpp:24[m[K,
+[1.039s]                  from [01m[K/opt/ros/dashing/include/rclcpp/memory_strategies.hpp:18[m[K,
+[1.039s]                  from [01m[K/opt/ros/dashing/include/rclcpp/executor.hpp:33[m[K,
+[1.039s]                  from [01m[K/opt/ros/dashing/include/rclcpp/executors/multi_threaded_executor.hpp:24[m[K,
+[1.039s]                  from [01m[K/opt/ros/dashing/include/rclcpp/executors.hpp:21[m[K,
+[1.039s]                  from [01m[K/opt/ros/dashing/include/rclcpp/rclcpp.hpp:144[m[K,
+[1.039s]                  from [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:4[m[K:
+[1.039s] [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr) const[m[K’:
+[1.040s] [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:22:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _data_type = class std::vector<double> {aka class std::vector<double>}[m[K’ has no member named ‘[01m[Kc_str[m[K’
+[1.040s]        RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.[01;31m[Kc[m[K_str());
+[1.040s]                                                                   [01;31m[K^[m[K
+[1.040s] [01m[K/opt/ros/dashing/include/rcutils/logging_macros.h:72:64:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KRCUTILS_LOG_COND_NAMED[m[K’
+[1.040s]        rcutils_log(&__rcutils_logging_location, severity, name, [01;36m[K__VA_ARGS__[m[K); \
+[1.040s]                                                                 [01;36m[K^~~~~~~~~~~[m[K
+[1.040s] [01m[K/opt/ros/dashing/include/rclcpp/logging.hpp:218:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KRCUTILS_LOG_INFO_NAMED[m[K’
+[1.040s]      [01;36m[KRCUTILS_LOG_INFO_NAMED[m[K( \
+[1.040s]      [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.040s] [01m[K/opt/ros/dashing/include/rclcpp/logging.hpp:221:9:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KRCLCPP_ALL_BUT_FIRST_ARGS[m[K’
+[1.040s]          [01;36m[KRCLCPP_ALL_BUT_FIRST_ARGS[m[K(__VA_ARGS__,"")); \
+[1.040s]          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.040s] [01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:22:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KRCLCPP_INFO[m[K’
+[1.041s]        [01;36m[KRCLCPP_INFO[m[K(this->get_logger(), "I heard: '%s'", msg->data.c_str());
+[1.041s]        [01;36m[K^~~~~~~~~~~[m[K
+[1.663s] make[2]: *** [CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+[1.663s] make[1]: *** [CMakeFiles/listener.dir/all] Error 2
+[1.663s] CMakeFiles/listener.dir/build.make:62: recipe for target 'CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o' failed
+[1.664s] CMakeFiles/Makefile2:136: recipe for target 'CMakeFiles/listener.dir/all' failed
+[1.664s] make: *** [all] Error 2
+[1.664s] Makefile:140: recipe for target 'all' failed
+[1.665s] Invoked command in '/home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /home/caesar/Desktop/ROS2/dev_ws/build/cpp_pubsub -- -j4 -l4

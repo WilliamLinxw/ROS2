@@ -1,0 +1,9 @@
+{
+    "ros.distro": "dashing",
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/dashing/lib/python3.6/site-packages"
+    ],
+    "files.associations": {
+        "string": "cpp"
+    }
+}

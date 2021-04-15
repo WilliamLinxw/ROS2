@@ -1,0 +1,7 @@
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::Float64MultiArray_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/caesar/Desktop/ROS2/dev_ws/src/cpp_pubsub/src/subscriber_member_function.cpp:23:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst SharedPtr {aka const class std::shared_ptr<std_msgs::msg::Float64MultiArray_<std::allocator<void> > >}[m[K’ has no member named ‘[01m[Kdata[m[K’
+       std::cout << msg.[01;31m[Kdata[m[K << std::endl;
+                        [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o] Error 1
+make[1]: *** [CMakeFiles/listener.dir/all] Error 2
+make: *** [all] Error 2
