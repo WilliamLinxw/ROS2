@@ -42,15 +42,32 @@ class MinimalSubscriber : public rclcpp::Node{
         cout << msg->data[i] << endl;
       }
 
-      // Create data structure of Pose and an empty vector for storing the waypoints for Cartesian Planning
-      geometry_msgs::msg::Pose target_pose;
-      
-      std::vector<geometry_msgs::msg::Pose> waypoints;
+      if(msg->data.size() != 0){
+        // Create data structure of Pose and an empty vector for storing the waypoints for Cartesian Planning
+        geometry_msgs::msg::Pose target_pose;
+        
+        std::vector<geometry_msgs::msg::Pose> waypoints;
 
-      target_pose.position.x = msg->data[0];
-      target_pose.position.y = msg->data[1];
-      target_pose.position.z = msg->data[2];
-      waypoints.push_back(target_pose);
+        target_pose.position.x = msg->data[0];
+        target_pose.position.y = msg->data[1];
+        target_pose.position.z = msg->data[2];
+        waypoints.push_back(target_pose);
+
+        // Now, we call the planner to compute the plan and visualize it.
+        // Note that we are just planning, not asking move_group
+        // to actually move the robot.
+        moveit_msgs::msg::RobotTrajectory trajectory;
+        const double jump_threshold = 0.0;
+        const double eef_step = 0.01;
+        double fraction = move_group.computeCartesianPath(waypoints, eef_step, jump_threshold, trajectory);
+        RCLCPP_INFO(LOGGER, "Visualizing plan 4 (Cartesian path) (%.2f%% acheived)", fraction * 100.0);
+
+        // You can execute a trajectory like this.
+        bool execute = false;
+        if(execute == true){
+          move_group.execute(trajectory);
+        }
+      }
 
 
     }

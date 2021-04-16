@@ -134,6 +134,7 @@ def main(args=None):
                 print(point)
                 my_array_for_publishing = Float64MultiArray(data=point)
                 node.pub.publish(my_array_for_publishing)
+                time.sleep(0.5)
     
     # Create an empty array as the flag of finish publishing
     flag_for_end = Float64MultiArray(data=np.empty(shape=0))
