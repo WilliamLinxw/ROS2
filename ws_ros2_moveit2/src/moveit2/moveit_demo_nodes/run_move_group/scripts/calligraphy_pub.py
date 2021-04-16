@@ -18,8 +18,8 @@ from std_msgs.msg import String
 class Calligraphy_Node(Node):
     def __init__(self):
         super().__init__('calligraphy_talker')
-        self.pub = self.create_publisher(Float64MultiArray, 'arm_strokes')
-        self.WORD_DIR = '/home/caesar/Desktop/tad-ros2-v0.2.0/tad_robot/pyscript/calligraphy/data/'
+        self.pub = self.create_publisher(Float64MultiArray, 'arm_strokes', 10)
+        self.WORD_DIR = '/home/ubuntu/ws_ros2/src/moveit2/moveit_demo_nodes/run_move_group/character_data/'
         self.strings = "桃之夭夭 灼灼其华 之子于归 宜其室家".split(" ")
 
     # Get all strokes of all the characters in the specified string
@@ -134,7 +134,7 @@ def main(args=None):
                 print(point)
                 my_array_for_publishing = Float64MultiArray(data=point)
                 node.pub.publish(my_array_for_publishing)
-                time.sleep(0.5)
+                time.sleep(0)
     
     # Create an empty array as the flag of finish publishing
     flag_for_end = Float64MultiArray(data=np.empty(shape=0))

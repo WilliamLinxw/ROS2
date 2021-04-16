@@ -12,6 +12,8 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
 
 find_package(moveit_ros_planning_interface REQUIRED)
 # This shouldn't be necessary (required by moveit_simple_controller_manager)
@@ -27,9 +29,20 @@ ament_target_dependencies(run_move_group
   Boost
 )
 
-install(TARGETS run_move_group
+add_executable(calligraphy src/calligraphy_sub.cpp)
+ament_target_dependencies(calligraphy
+  moveit_ros_planning_interface
+  Boost
+  rclcpp
+  std_msgs
+)
+
+install(TARGETS
+  run_move_group
+  calligraphy
   EXPORT export_${PROJECT_NAME}
-  DESTINATION lib/${PROJECT_NAME}
+  DESTINATION 
+  lib/${PROJECT_NAME}
 )
 
 install(DIRECTORY launch
