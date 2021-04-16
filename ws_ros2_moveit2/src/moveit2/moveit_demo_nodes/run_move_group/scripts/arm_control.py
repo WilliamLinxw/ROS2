@@ -17,7 +17,7 @@ class Listener(Node):
     def __init__(self):
         super().__init__('listener')
         self.sub = self.create_subscription(JointState, '/joint_states', self.joint_state_callback, 10)
-        self.real_zero_values = [-162.4, 68,114,58,194]  #模型中关节为0度时,实体关节的角度
+        self.real_zero_values = [-162.4, 70,114,58,194]  #模型中关节为0度时,实体关节的角度
         self.ip = '192.168.1.217'
         self.arm = XArmAPI(self.ip)
         self.arm.motion_enable(enable=True)
@@ -29,19 +29,20 @@ class Listener(Node):
         ''' 将模型上的角度转为xarm上的角度 加上一个初始差值 '''
         real_values = model_values
         real_values[0] += self.real_zero_values[0]
-        real_values[1] *= -1
         real_values[1] += self.real_zero_values[1]
         real_values[2] += self.real_zero_values[2]
+        real_values[3] *= -1
         real_values[3] += self.real_zero_values[3]
+        real_values[4] *= -1
         real_values[4] += self.real_zero_values[4]
         return real_values
 
     def joint_state_callback(self, data):
         
         joint_position = data.position
-        angles = [joint_position[9]*180/3.14159, joint_position[10]*180/3.14159, joint_position[11]*180/3.14159, joint_position[12]*180/3.14159, joint_position[13]*180/3.14159,54.5, -26]
+        print("joint33-36:",joint_position[33:])
+        angles = [joint_position[33]*180/3.14159, joint_position[34]*180/3.14159, joint_position[35]*180/3.14159, joint_position[36]*180/3.14159, joint_position[37]*180/3.14159,54.5, -26]
         angles_ = self.model_values_to_real_values(angles)
-        # angles_ = [-168, 68, 114, 58, 179, 54.5, -26]
         print(angles_)
         if self.arm.connected and self.arm.state != 4 and self.count % 10 == 0:
             #def set_servo_angle_j(self, angles, speed=None, mvacc=None, mvtime=None, is_radian=None, **kwargs):
