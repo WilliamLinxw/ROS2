@@ -66,6 +66,11 @@
         "memory_resource": "cpp",
         "random": "cpp",
         "set": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "regex": "cpp",
+        "slist": "cpp",
+        "future": "cpp",
+        "cfenv": "cpp",
+        "valarray": "cpp"
     }
 }

@@ -28,10 +28,10 @@
   </group_state>
   <group_state group="panda_arm" name="write_pos">
     <joint name="panda_joint1" value="0.0"/>
-    <joint name="panda_joint2" value="-0.14"/>
-    <joint name="panda_joint3" value="1.32"/>
+    <joint name="panda_joint2" value="0.1"/>
+    <joint name="panda_joint3" value="0"/>
     <joint name="panda_joint4" value="-1.65"/>
-    <joint name="panda_joint5" value="1.31"/>
+    <joint name="panda_joint5" value="0.05"/>
     <!-- <joint name="panda_joint6" value="1.571"/>
     <joint name="panda_joint7" value="0.785"/> -->
   </group_state>

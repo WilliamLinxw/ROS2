@@ -18,9 +18,9 @@ from std_msgs.msg import String
 class Calligraphy_Node(Node):
     def __init__(self):
         super().__init__('calligraphy_talker')
-        self.pub = self.create_publisher(Float64MultiArray, 'arm_strokes', 10)
+        self.pub = self.create_publisher(Float64MultiArray, 'arm_strokes', 1000)
         self.WORD_DIR = '/home/ubuntu/ws_ros2/src/moveit2/moveit_demo_nodes/run_move_group/character_data/'
-        self.strings = "桃之夭夭 灼灼其华 之子于归 宜其室家".split(" ")
+        self.strings = "白日依山尽 黄河入海流 欲穷千里目 更上一层楼 艾瑟尔".split(" ")
 
     # Get all strokes of all the characters in the specified string
     def get_all_points(self, start_pos, words="千山鸟飞绝", axis="1"):
@@ -118,7 +118,7 @@ def main(args=None):
         words_strokes = words_strokes + node.get_all_points(paint_start_pos, strings[i])
 
     # Set the center of the actual writing plane
-    arm_start_pos = [0.417, -0.241, 0.50]
+    arm_start_pos = [0.4417, -0.2585, 0.88]
     arm_strokes = node.get_arm_strokes(words_strokes, arm_start_pos)
 
     # Change type to array for pubilshing
@@ -135,10 +135,18 @@ def main(args=None):
                 my_array_for_publishing = Float64MultiArray(data=point)
                 node.pub.publish(my_array_for_publishing)
                 time.sleep(0)
+            lift = stroke[len(stroke) - 1]
+            lift[2] = lift[2] + 0.02
+            print(lift)
+            my_array_for_publishing = Float64MultiArray(data=lift)
+            node.pub.publish(my_array_for_publishing)
+            time.sleep(0)
+                
     
     # Create an empty array as the flag of finish publishing
-    flag_for_end = Float64MultiArray(data=np.empty(shape=0))
+    flag_for_end = Float64MultiArray(data=[0, 0, 0])
     node.pub.publish(flag_for_end)
+    print(flag_for_end)
     
     print('Published!')
 
