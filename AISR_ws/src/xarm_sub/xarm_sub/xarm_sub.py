@@ -20,7 +20,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '../../..'))
 
 # Flags for different testing situations
 # If both are false, just print out the text files
-is_arm_ready = False
+is_arm_ready = True
 is_ROS_ready = True
 
 # Flag of whether the arm is triggered
@@ -49,21 +49,19 @@ if is_arm_ready:
         ip = xarm_ip
 ########################################################
 
-if is_arm_ready:
-    arm = XArmAPI(ip)
-    arm.motion_enable(enable=True)
-    arm.set_mode(0)
-    arm.set_state(state=0)
-    is_arm_triggered = True
-    print('Connected!')
-
 class WhiteArmSubscriber(Node):
 
     def __init__(self):
         super().__init__('white_arm_subscriber')
         self.subscription = self.create_subscription(String, 'white_arm', self.listener_callback, 10)
         self.subscription  # prevent unused variable warning
-
+        if is_arm_ready:
+            self.arm = XArmAPI(ip)
+            self.arm.motion_enable(enable=True)
+            self.arm.set_mode(0)
+            self.arm.set_state(state=0)
+            is_arm_triggered = True
+            print('Xarm Connected!')
 
     # Move only one servo based on the message input
     def move_one_servo_only(self, message):
@@ -96,7 +94,7 @@ class WhiteArmSubscriber(Node):
         # Get the current angle
         # Only work when the xArm is connected
         if is_arm_ready:
-            current_servo_angle_xArm = arm.get_servo_angle()[1]
+            current_servo_angle_xArm = self.arm.get_servo_angle()[1]
 
             print('Current xarm angle: ', current_servo_angle_xArm)
             servo_move_angle = move_head_dict['angle']
@@ -110,8 +108,8 @@ class WhiteArmSubscriber(Node):
 
             print('All target angles: ', all_target_servo_angle)
         
-            arm.set_servo_angle(angle=all_target_servo_angle, is_radian=False, speed=40, wait=False)
-            print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
+            self.arm.set_servo_angle(angle=all_target_servo_angle, is_radian=False, speed=40, wait=False)
+            print(self.arm.get_servo_angle(), self.arm.get_servo_angle(is_radian=True))
 
 
     # Move any servo based on the message input
@@ -157,7 +155,7 @@ class WhiteArmSubscriber(Node):
             # Get the current angle for servos that do not move
             # Only work when the arm is connected
             if is_arm_ready:
-                current_angle = arm.get_servo_angle()[1]
+                current_angle = self.arm.get_servo_angle()[1]
                 print(current_angle)
                 for i in range(len(angles)):
                     if angles[i] is None:
@@ -168,8 +166,8 @@ class WhiteArmSubscriber(Node):
             print('angles: ', angles)
 
             if is_arm_ready:
-                arm.set_servo_angle(angle=angles, speed=speed, is_radian=False, wait=False)
-                print(arm.get_servo_angle(), arm.get_servo_angle(is_radian=True))
+                self.arm.set_servo_angle(angle=angles, speed=speed, is_radian=False, wait=False)
+                print(self.arm.get_servo_angle(), self.arm.get_servo_angle(is_radian=True))
 
 
     # Callback function for ROS subscription
@@ -177,20 +175,27 @@ class WhiteArmSubscriber(Node):
         self.get_logger().info('I heard: "%s"' % msg.data)
         global is_arm_triggered
 
-        print("If ID is specified for moving only one servo: ", ('id' in msg.data))
+        # print("If ID is specified for moving only one servo: ", ('id' in msg.data))
         print("Triggered?： ", is_arm_triggered)
+
+
         # Determine whether to move one head only
-        if msg.data == 'open_white_arm':
-            arm.motion_enable(enable=True)
-            arm.set_mode(0)
-            arm.set_state(state=0)
+        if msg.data == '{\"move_control\":\"open_white_arm\"}':
+            self.arm = XArmAPI(ip)
+            self.arm.motion_enable(enable=True)
+            self.arm.set_mode(0)
+            self.arm.set_state(state=0)
             is_arm_triggered = True
-            print('xArm is triggered')
-        elif msg.data == 'close_white_arm':
-            arm.motion_enable(enable=False)
-            arm.set_state(state=4)
+            self.get_logger().info('xArm is triggered')
+            return
+        elif msg.data == '{\"move_control\":\"close_white_arm\"}':
+            self.arm.motion_enable(enable=False)
+            self.arm.set_state(state=4)
             is_arm_triggered = False
-            print('xArm is stopped')
+            self.arm.disconnect()
+            self.get_logger().info('xArm is stopped')
+            return
+        
         if is_arm_triggered:
             if 'id' in msg.data:
                 print('Move one servo')
@@ -261,7 +266,7 @@ def main(args=None, action_name=None):
         rclpy.shutdown()
 
         # Shut down the xArm
-        arm.disconnect()
+        white_arm_subscriber.arm.disconnect()
         print('xArm disconnected')
 
 if __name__ == '__main__':
