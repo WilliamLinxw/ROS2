@@ -37,9 +37,16 @@ ament_target_dependencies(calligraphy
   std_msgs
 )
 
+add_executable(robot_arm_ik src/robot_arm_ik.cpp)
+ament_target_dependencies(robot_arm_ik
+  moveit_ros_planning_interface
+  Boost
+)
+
 install(TARGETS
   run_move_group
   calligraphy
+  robot_arm_ik
   EXPORT export_${PROJECT_NAME}
   DESTINATION 
   lib/${PROJECT_NAME}

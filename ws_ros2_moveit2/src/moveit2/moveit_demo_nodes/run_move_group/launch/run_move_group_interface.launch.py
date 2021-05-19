@@ -38,9 +38,9 @@ def generate_launch_description():
     kinematics_yaml = load_yaml('moveit_resources_panda_moveit_config', 'config/kinematics.yaml')
 
     # MoveGroupInterface demo executable
-    run_move_group_demo = Node(name='calligraphy',
+    run_move_group_demo = Node(name='robot_arm_ik',
                                package='run_move_group',
-                               executable='calligraphy',
+                               executable='robot_arm_ik',
                             #    prefix='xterm -e',
                                output='screen',
                                parameters=[robot_description,
