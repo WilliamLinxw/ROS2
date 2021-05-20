@@ -1,4 +1,4 @@
-# AISR Calligraphy using MoveIt
+# AISR Calligraphy using MoveIt 2
 
 - Environment Requirement
 
