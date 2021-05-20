@@ -126,7 +126,8 @@ def main(args=None):
     for i in range(len(arm_strokes_array)):
         arm_strokes_array[i] = np.array(arm_strokes_array[i])
 
-    input("-------- Press Enter to publish --------")
+    input("-------- Press Enter to publish and write to a text file --------")
+    
     file_handle =  open("write_point.txt",'a')
     for word in arm_strokes_array:
         for stroke in word:
