@@ -7,7 +7,7 @@
 
 - Realized with move_group class(more steps, heavier, but with GUI)
 
-  - Specify the executable in the launch file（run_move_group_interface.launch.py）；
+  - Specify the executable in the launch file(run_move_group_interface.launch.py);
 
     ```python
     def generate_launch_description():
@@ -33,15 +33,16 @@
         return LaunchDescription([run_move_group_demo])
     ```
 
-  - Launch MoveIt and its GUI
+  - Launch MoveIt and its GUI;
 
     ``` 
     $ ros2 launch run_move_group.launch.py
     ```
 
   - In the GUI, move the white arm to its write_pos；
-
-  - Start the node of calligraphy_sub, listening to topic /arm_stroke
+  ![](AISR.png)
+  
+  - Start the node of calligraphy_sub, listening to topic /arm_stroke;
     
     ```  
     $ ros2 launch run_move_group_interface.launch.py
@@ -64,7 +65,7 @@
 
 - Realized with robot_model and robot_state classes (less steps, lighter)
 
-  - Specify the executable in the launch file（run_move_group_interface.launch.py）；
+  - Specify the executable in the launch file(run_move_group_interface.launch.py);
 
     ```python
     def generate_launch_description():
