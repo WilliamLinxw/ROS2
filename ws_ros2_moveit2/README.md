@@ -36,7 +36,7 @@
   - Build the workspace
 
     ```
-    $ cd /src
+    $ cd /ws_ros2_moveit2
     $ colcon build
     ```
 
@@ -101,7 +101,7 @@
   - Build the workspace
 
     ```
-    $ cd /src
+    $ cd /ws_ros2_moveit2
     $ colcon build
     ```
     
