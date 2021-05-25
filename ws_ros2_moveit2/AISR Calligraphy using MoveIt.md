@@ -33,6 +33,13 @@
         return LaunchDescription([run_move_group_demo])
     ```
 
+  - Build the workspace
+
+    ```
+    $ cd /src
+    $ colcon build
+    ```
+
   - Launch MoveIt and its GUI;
 
     ``` 
@@ -41,7 +48,7 @@
 
   - In the GUI, move the white arm to its write_pos；
   ![](AISR.png)
-  
+
   - Start the node of calligraphy_sub, listening to topic /arm_stroke;
     
     ```  
@@ -91,6 +98,13 @@
         return LaunchDescription([run_move_group_demo])
     ```
 
+  - Build the workspace
+
+    ```
+    $ cd /src
+    $ colcon build
+    ```
+    
   - Run calligraphy_pub.py, write out the end effector's positions to write_point.txt;
 
     ```
@@ -101,16 +115,16 @@
     ```
 
   - Start robot_arm_ik node by launching run_move_group_interface.launch.py, which will calculate the joint angles according to the end effector's positions using inverse kinematics algorithm and write out to joint_position.txt;
-    ```
+  ```
     $ ros2 launch run_move_group_interface.launch.py
     $ ls
     arm_control_by_reading_files.py arm_control_by_subscription.py calligraphy_pub.py joint_position.txt write_point.txt
-    ```
-
+  ```
+  
   - Run arm_control_by_reading_files.py, read joint_position.txt and control the white arm according to the joint angles calculated in the above step (The situation of arm not connected is dealt with. If the arm is not connected, it will only print logs and the arm remains still. Can be used as testing);
-
+  
     ```
     $ python3 arm_control_by_reading_files.py
     ```
-
+  
   - If the robot is connected, the white arm will start moving; otherwise, the program will only pring logs in the console.
